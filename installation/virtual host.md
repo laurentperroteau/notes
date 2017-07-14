@@ -38,3 +38,11 @@ Appliquer changement :
 ======================
 
 * `sudo service apache2 restart`
+
+
+### (opt) Fichier de conf dans le home :
+
+* `sudo nano coral.conf` (depuis /home/laurentperroteau/www/installation/coral.conf)
+* `sudo a2ensite coral.conf`
+* `sudo service apache2 restart`
+
