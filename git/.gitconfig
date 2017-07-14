@@ -1,0 +1,20 @@
+[user]
+    name = myName
+    email = myEmail
+[core]
+    autocrlf = true
+    editor = nano
+[alias]
+    c = commit
+    b = branch -a
+    s = status -sb -uall
+    a = add
+    k = !git add . && git commit
+    di = "!f() { git diff --ignore-space-change $1; }; f"
+    f = fetch origin
+    undo = reset --soft HEAD^
+    crb = "!f() { git checkout -b $1 origin/$1; }; f"
+    lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %Cblue<%an>%Creset' --abbrev-commit --date=relative --all
+    l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %Cblue<%an>%Creset' --abbrev-commit --date=relative --all --max-count='10
+[push]
+    default = simple
