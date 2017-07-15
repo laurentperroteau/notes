@@ -23,7 +23,17 @@ Ionic vs React Native
 | Cross Plateform  | Android / iOS / Windows | Android / iOS et plugin pour Windows |
 | Plugins | PhoneGap / Cordova | plugin React Native (mais possibilité d'utiliser Cordova) |
 | Performance | WebView (WebView Chrome dans Safari sur iOS), donc bof | Natif, donc excellent |
-| Développement | Phase sans Cordova dans navigateur, avec simulateur sinon | Utilisation du simulateur ou d'un mobile + un plugin pour avec la console dans Chrome |
-| Maison mère | ??? | Facebook |
+| Développement | Phase sans Cordova dans navigateur, avec simulateur sinon | Utilisation du simulateur ou d'un mobile + un plugin pour avec la console dans Chrome | 
 | Conaissances prérequises | Angular 2 | React JS |
-|
+| Rapidité de dev (si connaissance prérequises) | Très rapide pour feature web normale, un peu moins si plugin Cordova | Moyennement rapide, besoin de comprendre tous les composants et s'adapter |
+| Maison mère | ??? | Facebook |
+
+Conslusion (temp) :
+-------------------
+
+* Ionic si :
+  * petit appli 
+  * besoin de dev rapide
+  * critère perf moyennement important (devices clients pas trop vieux)
+  * équipe ne connait Angular 2/4 mais pas React
+* sinon, choisir React Native
