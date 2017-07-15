@@ -10,27 +10,11 @@ Ionic vs React Native
     * résultat très différent si on ajoute ou pas le mot "framework" avec Ionic mais :
       * React Native augmente constament (triplé en une année)
       * Ionic reste constant (les montées de Ionic à la fin de l'été 2016 n'a pas de sens)
+* Microsoft à créer un plugin pour créer des applications Windows avec React Native : https://github.com/Microsoft/react-native-windows
 * Article Ionic vs React Native : 
   * comme pour les batailles React vs Angular, la communauté React est beaucoup plus présente sur le web, donc React gagne tous le temps
   * https://www.codementor.io/fmcorz/react-native-vs-ionic-du1087rsw
   * https://www.digitz.fr/blog/developpement-mobile-hybride-ionic-vs-react-native/
-  * Résumé des "Pros & Cons" :
-    * Ionic v2
-      * __POURS__
-        * Basé sur Cordova (gros choix de plugins)
-        * Code identique sur toutes les plateformes (iOS, Android, Win)
-        * Style comme web
-      * __CONTRES__
-        * Rendu graphique lent ( via webview )
-    * React-Native
-      * __POURS__
-        * Projet portée par Facebook (rassurant)
-        * Rendu graphique natif (plus rapide)
-        * Communauté de développeur actif grandissant, beaucoup de code sur github 
-        * React devise "Learn once, write anywhere"
-      * __CONTRES__
-        * A l'origine prévue seulement pour Android/iOS mais Microsoft à créer un plugin pour créer des applications Windows avec React Native : https://github.com/Microsoft/react-native-windows
-        * Environnement de développement instable susceptible de changer  (version actuel 0.40)
   * Comparaison (Ionic vs React) :     
   
 |        | Ionic | React Native |
