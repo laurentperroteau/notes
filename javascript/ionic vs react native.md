@@ -37,3 +37,6 @@ Conslusion (temp) :
   * critère perf moyennement important (devices clients pas trop vieux)
   * équipe ne connait Angular 2/4 mais pas React
 * sinon, choisir React Native
+
+https://medium.com/dailyjs/11-mistakes-ive-made-during-react-native-redux-app-development-8544e2be9a9
+
