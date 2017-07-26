@@ -14,7 +14,7 @@ Développement :
 Démo :
 ------
 
-*chaque DEV présente un partie (oblige à bien tester et se préparer)
+* chaque DEV présente un partie (oblige à bien tester et se préparer)
 
 Rétro :
 ------
