@@ -2,19 +2,38 @@
     name = myName
     email = myEmail
 [core]
-    autocrlf = true
+    autocrlf = true # besoin si des personnes développent sous Windows
     editor = nano
+[color]
+    ui = true
+[color.status]
+    updated = yellow
+    changed = green
+    untracked = cyan
+[color.branch]
+    remote = yellow
 [alias]
     c = commit
+    amend = commit --amend
     b = branch -a
+    br = branch
     s = status -sb -uall
     a = add
     k = !git add . && git commit
+    r = reset --hard HEAD # supprime tous les changements non commités
+    rc = !git reset --hard HEAD && git clean -df # même chose avec un clean
+    undo = reset --soft HEAD^ # supprimer le dernier commit
     di = "!f() { git diff --ignore-space-change $1; }; f"
+    dic = di --cached
     f = fetch origin
-    undo = reset --soft HEAD^
-    crb = "!f() { git checkout -b $1 origin/$1; }; f"
+    co = checkout
+    col = checkout - # checkout last branch
+    up = pull
+    p = push
+    pf = push -f
+    crb = "!f() { git checkout -b $1 origin/$1; }; f" # checkout new remote branch
     lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %Cblue<%an>%Creset' --abbrev-commit --date=relative --all
     l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %Cblue<%an>%Creset' --abbrev-commit --date=relative --all --max-count='10
+    last = log -1 --stat
 [push]
-    default = simple
+    default = current # ainsi git push => git push origin currentBranch
