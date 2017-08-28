@@ -59,7 +59,7 @@ Commiter les fichiers "staged"
 
 ---
 
-Ajouter au dernier commit un change oublié
+Ajouter au dernier commit un changement oublié
 
 ````$ git commit --amend````
 
@@ -102,13 +102,13 @@ Tester le projet a un commit antérieur (et ensuite annuler le test)
 
 ---
 
-Renommer/déplacer un fichier "modified"
+Renommer/déplacer un fichier
     
 ````$ git mv path/file.html````
 
 ---
 
-Suppression d'un fichier "modified"
+Suppression d'un fichier
     
 ````$ git rm file.html````
 
@@ -222,7 +222,7 @@ Crée une branche alors que des fichiers sont "modified" (pas possible sur Torto
 
 Crée une branche depuis n commit antérieur (ex: j'ai oublié de créer une nouvelle branche, j'étais sur master)
 
-````$ git branch newbranch```` (ne fonctionne avec une branche existante, il faut en créer une nouvelle)
+````$ git branch newbranch```` (ne fonctionne pas avec une branche existante, il faut en créer une nouvelle)
 
 ````$ git reset --hard HEAD~3```` (changer 3 par la quantité de commit)
 
@@ -281,7 +281,7 @@ Annuler un merge (retour à l'état d'avant merge) :
 
 ---
 
-Merger seulement un commit d'un autre branch
+Merger seulement un commit d'une autre branch
     
 ````$ git cherry-pick numeroCommit````
 
@@ -301,27 +301,10 @@ Annuler un rebase (on perd ce qui est staged)
     
 ````$ git rebase --abort````
 
-Après avoir rebase master sur un branche de type feature (à condition que les deux soit à jour) :
+Après avoir rebase master sur une branche de type feature (à condition que les deux soit à jour) :
 
 ````$ git push --force origin feature-branch````
 
-
-Tester / valider un Merge request :
----------------
-
-1. ````$ git fetch origin````
-2. ````$ branch -a```` (repérer le branche à merger dans les "remotes" qui ne doit pas exister dans local)
-3. ````$ git checkout -b nomBranche origin/nomBranche```` (récupère la branche distante toute en créant une branche local du même nom, puis se positionne sur cette dernière)
-4. Tester la branche
-5. ````$ git push origin nomBranch``` (si des modifications sont apportés à la branche)
-6. Si tout est OK :
-7. ````$ git checkout master``` (se positionne sur master)
-8. ````$ git merge nomBranche --no-ff -Xignore-space-change``` (merger la branche sur master, sans fast-forward)
-    1. Si conflit compliqué, il est possible d'annuler le merge : 
-    2. ````$ git reset hard HEAD```` 
-    3. Et/Ou de merger à l'envers : c'est à dire ````master```` sur ````nomBranche```` (en se repositionnant sur ````nomBranche````, puis on appliquant le point 8 avec ````master```` à la place de ````nomBranche````)
-    4. Ensuite seulement, après un nouveau test plus avancé, on mergera sur master (reprendre le point 8)
-9. ````$ git push origin master```
 
 Taguer un instant donné :
 --------------------------
@@ -364,10 +347,6 @@ Git Lab :
     * Sélectionner la branche voulu et la branche sur laquel on souhaite merger (master par exemple)
     * Assigner le merge-request
     * Quand la branche sera merger (pas forcément via Git Lab), elle sera automatiquement fermé
-
-* Ajouter une issue si changement HTML à indiquer pour l'intégration :
-    * Ajouter label "Update HTML"
-    * Mettre dans message "Commit 1bc06ad04e0fc0e8727a14e8caf889496bd152bdon => fileName"
 
 * Faire référence à une issue (dans une autre issue ou pull request)
     * Lorem ipsum #123
