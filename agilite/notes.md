@@ -21,3 +21,21 @@ Rétro :
 
 * créer au moins un axe d'amélioration et en suivre l'état à chaque nouveau sprinte jusqu'à qu'il soit acquis (faire atelier si besoin pour les faire ressortir)
 * météo (anonyme la communication gestion de projet/dev n'est pas complétement transparent)
+
+Jeux agile :
+------------
+
+### Trouver axes d'amélioration : 
+
+Placer des post it dans les cases :
+  * ce que j'a aimé
+  * ce que j'ai appris
+  * ce que l'on aurait pu faire
+  * ce que je souhaiterais que l'on fasse au prochain sprint
+  
+Sortir les axes concrets d'amélioration faisable dans le prochain sprint des 2 dernières cases, possibilité de considérer les 2 premières comme acquise  
+
+Réunion :
+---------
+
+Toujours timeboxer
