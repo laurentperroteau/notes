@@ -33,7 +33,15 @@ Placer des post it dans les cases :
   * ce que l'on aurait pu faire
   * ce que je souhaiterais que l'on fasse au prochain sprint
   
-Sortir les axes concrets d'amélioration faisable dans le prochain sprint des 2 dernières cases, possibilité de considérer les 2 premières comme acquise  
+Sortir les axes concrets d'amélioration faisable dans le prochain sprint des 2 dernières cases, possibilité de considérer les 2 premières comme acquise.
+
+Faire des points au fur et à mesure pour savoir les actions doivent :
+* A continuer/commencer
+* Terminée/A arrêter
+* A faire / refaire autrement
+
+
+
 
 Réunion :
 ---------
