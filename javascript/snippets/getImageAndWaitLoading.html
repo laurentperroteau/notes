@@ -1,0 +1,22 @@
+<html>
+    <body>
+    <img />
+    <script>
+        (function() {
+            // Get image tag name without src
+            const _img = document.getElementsById('img')[0];
+            
+            // Create new image object
+            const newImg = new Image;
+            
+            // Create callback that add src at image on load
+            newImg.onload = () => {
+                _img.src = this.src;
+            };
+            
+            // Everything ready, now get image
+            newImg.src = 'img_big.jpg';
+        })()
+    </script>
+    </body>
+</html>
