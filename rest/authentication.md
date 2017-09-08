@@ -12,4 +12,5 @@ Notes :
 * Gestion des tokens avec [Restangular](https://github.com/2muchcoffeecom/ngx-restangular#i-need-to-send-authorization-token-in-every-restangular-request-how-can-i-do-this)
 
 TODO: 
+* test tuto Angular 2 : http://jasonwatmore.com/post/2016/08/16/angular-2-jwt-authentication-example-tutorial
 * tester tuto JWT avec node.js : https://github.com/ksahnine/jwt-secured-api-node
