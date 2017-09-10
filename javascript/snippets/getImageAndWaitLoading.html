@@ -9,12 +9,12 @@
             // Create new image object
             const newImg = new Image;
             
-            // Create callback that add src at image on load
+            // Create callback that set src image of newImage "onload"
             newImg.onload = () => {
                 _img.src = this.src;
             };
             
-            // Everything ready, now get image
+            // Set image on Object Image, that will set on component image when will be ready
             newImg.src = 'img_big.jpg';
         })()
     </script>
