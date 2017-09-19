@@ -3,14 +3,22 @@ Notes agilité
 
 > agilité orienté dev et pas tant côté client
 
-Développement :
+Equipe DEV :
 ---------------
 
-* dans la mesure ou le client/CP/PO est capable de comprendre le MVP, toujours faire au plus simple
-  * ex: besoin de développer quelques choses qui "simple" mais toujours chronophage comme un datepicker, mettre juste un champ texte dans un premier temps
+* Ne pas commencer une US si les specs ne sont pas complète et claire 
+* Simplicité : dans la mesure ou le client/CP/PO est capable de comprendre le principe du MVP, créer des US petites et simples
+  * ex: un formulaire avec un datepicker (si c'est le premier de l'app) :
+    * créer une première US avec le formulaire et juste un champ texte pour la date (ou avec un champ date natif)
+    * créer une deuxième US (dans le sprint suivant) pour le datepicker
+    * pourquoi un datepicker ? C'est typiquement un élément qui "peut" paraître simple quand on est pas technique mais qui est en réalité impliquer beaucoup de chose (comportement, mobile, limite, localisation, format d'échange des dates etc...)
+      * => avantages/résultats : 
+        * US plus petite, donc plus flexible (plus agile, déplacable plus facilement)
+        * on valide le besoin réel après le premier sprint
+        * le choix et l'instalation d'un plugin étant importante et chronophage, pas de temps perdu
   * ex: ne développer que 2 écrans sur les 10/15 prévue 
-  * => résultat, le client/CP/PO voit une première version très rapidement
-
+      * avantages/résultats => première livraison plus tôt, donc retour du client plus tôt aussi 
+      
 Démo :
 ------
 
