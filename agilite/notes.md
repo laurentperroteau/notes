@@ -14,10 +14,10 @@ Equipe DEV :
     * créer une première US avec le formulaire et juste un champ date natif
     * créer une deuxième US (pour le sprint suivant) pour le datepicker (généralement un plugin open source)
     * => avantages/résultats : 
-      * US plus petite, donc plus flexible (plus agile, déplacable plus facilement)
+      * US plus petites, donc plus flexible (plus agile, déplacable plus facilement)
       * on valide le besoin réel après le premier sprint
       * le choix et l'instalation d'un plugin étant importante et chronophage, pas de temps perdu
-    * pourquoi un datepicker ? C'est typiquement un élément qui "peut" paraître simple quand on est pas technique mais qui est en réalité impliquer beaucoup de chose (comportement, mobile, limite, localisation, format d'échange des dates etc...)
+    * pourquoi un datepicker comme exemple ? C'est typiquement un élément qui "peut" paraître simple quand on est pas technique mais qui est en réalité impliquer beaucoup de chose (comportement, mobile, limite, localisation, format d'échange des dates etc...)
       
 Démo :
 ------
