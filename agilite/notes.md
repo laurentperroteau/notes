@@ -7,17 +7,17 @@ Equipe DEV :
 ---------------
 
 * Ne pas commencer une US si les specs ne sont pas complète et claire 
-* Simplicité : dans la mesure ou le client/CP/PO est capable de comprendre le principe du MVP, créer des US petites et simples
+* __Simplicité__, dans la mesure où le client/CP/PO est capable de comprendre le principe du MVP, créer des US petites et simples :
+  * ex: ne développer que 2 écrans sur les 10/15 prévues 
+      * avantages/résultats => première livraison plus tôt, donc retours du client plus rapides
   * ex: un formulaire avec un datepicker (si c'est le premier de l'app) :
-    * créer une première US avec le formulaire et juste un champ texte pour la date (ou avec un champ date natif)
-    * créer une deuxième US (dans le sprint suivant) pour le datepicker
+    * créer une première US avec le formulaire et juste un champ date natif
+    * créer une deuxième US (pour le sprint suivant) pour le datepicker (généralement un plugin open source)
+    * => avantages/résultats : 
+      * US plus petite, donc plus flexible (plus agile, déplacable plus facilement)
+      * on valide le besoin réel après le premier sprint
+      * le choix et l'instalation d'un plugin étant importante et chronophage, pas de temps perdu
     * pourquoi un datepicker ? C'est typiquement un élément qui "peut" paraître simple quand on est pas technique mais qui est en réalité impliquer beaucoup de chose (comportement, mobile, limite, localisation, format d'échange des dates etc...)
-      * => avantages/résultats : 
-        * US plus petite, donc plus flexible (plus agile, déplacable plus facilement)
-        * on valide le besoin réel après le premier sprint
-        * le choix et l'instalation d'un plugin étant importante et chronophage, pas de temps perdu
-  * ex: ne développer que 2 écrans sur les 10/15 prévue 
-      * avantages/résultats => première livraison plus tôt, donc retour du client plus tôt aussi 
       
 Démo :
 ------
