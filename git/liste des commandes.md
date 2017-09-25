@@ -2,7 +2,7 @@
 
 Lexique :
 ---------
-* HEAD : la révision courante (normalement le dernier commit)
+* HEAD : la référence à la révision courante (généralement le dernier commit)
 * untracked : pas encore versionné
 * unmodified : versionné mais pas modifié
 * modified : ayant des modifications pas encore ajouté au repo local
@@ -15,7 +15,7 @@ Catastrophe, j'ai tout perdu :
 
 A moins de ne pas avoir poussé sur un repo distant et d'avoir supprimer le dossier ````.git````, il est théoriquement impossible de perdre quelques choses avec Git : 
 
-1. ````$ git reflog```` pour voir les dernières actions exécuté (numéroté)
+1. ````$ git reflog```` pour voir les dernières actions exécutées (numérotées)
 2. ````$ git reset 'HEAD@{1}'```` pour revenir au HEAD a l'état précédent la catastrophe
 3. Le HEAD est maintenant à l'endroit voulu mais les fichiers en local sont toujours ceux précédent la catastrophe, donc il faut les annuler en faisant ```$ git checkout nomBrancheCourante``` 
 
@@ -56,6 +56,10 @@ Faire un diff d'un fichier "staged"
 Commiter les fichiers "staged"
     
 ````$ git commit -m “Message du commit” ````
+
+ou
+
+````$ git commit ```` (l'éditeur de la console s'ouvre)
 
 ---
 
@@ -150,7 +154,7 @@ Reset/Supprimer un ou des commit en revenant sur le dernier "bon" commit en loca
 
 ---
 
-Appliquer le reset/suppression à au répo distant
+Appliquer le reset/suppression au répo distant
 
 ````git push origin +HEAD````
 
@@ -198,7 +202,7 @@ Pousser les fichiers "staged" sur repo distant
 Branches :
 ----------
 
-Lister les branches et voir celle courante (passer ````-a```` pour celle du repo distant)
+Lister les branches et voir celle courante (passer ````-a```` pour celles du repo distant)
     
 ````$ git branch````
 
@@ -215,10 +219,6 @@ Copier une branche d'un repo distant
 ````$ git checkout -b nomBranche origin/nomBranche```` (récupère la branche distante toute en créant une branche local du même nom, puis se positionne sur cette dernière)
 
 ---
-
-Crée une branche alors que des fichiers sont "modified" (pas possible sur Tortoise):
-    
-~~````$ git checkout --orphan nomBranche````~~ => copie l'index, source de conflit inutile, ne pas utiliser
 
 Crée une branche depuis n commit antérieur (ex: j'ai oublié de créer une nouvelle branche, j'étais sur master)
 
@@ -290,7 +290,7 @@ Annuler un cherry-pick
 ````$ git cherry-pick --abort````
 
 
-REBASE :
+Rebase :
 -------
 
 Rebase une branche
