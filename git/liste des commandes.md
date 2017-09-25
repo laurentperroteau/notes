@@ -5,7 +5,7 @@ Lexique :
 * HEAD : la référence à la révision courante (généralement le dernier commit)
 * untracked : pas encore versionné
 * unmodified : versionné mais pas modifié
-* modified : ayant des modifications pas encore ajouté au repo local
+* modified : ayant des modifications pas encore ajoutées au repo local
 * staged : sur le repo local
 * fast-forward (ou ff) : [explication](http://tech.m6web.fr/tentative-d-explication-des-fast-forward-sous-git)
 
@@ -90,7 +90,7 @@ Rechercher un commit ayant dans le message du commit "hello"
 
 Ajouter toutes les modifications/suppression pas encore "staged" : 
 
-_ex : j'ai supprimé plein de fichier à la main sans passé par GIT et c'est un peu long de les ajouter un par un_
+_ex : j'ai supprimé beaucoup de fichier à la main sans passer par GIT et c'est un peu long de les ajouter un par un_
     
 ````$ git add -u````
 
@@ -142,7 +142,7 @@ Revert tous les fichiers staged (attention, les changements non-commité seront 
 
 ---
 
-Reset/Supprimer le ou les derniers commit en local
+Reset/Supprimer le où les derniers commit en local
 
 ````$ git reset --hard HEAD~1```` 
 
@@ -160,7 +160,7 @@ Appliquer le reset/suppression au répo distant
 
 ---
 
-Revert d'un commit spécifique (supprime les changements effectué lors d'un commit)
+Revert d'un commit spécifique (supprime les changements effectusé lors d'un commit)
 
 ````$ git revert 6f473b7````
 
@@ -176,19 +176,19 @@ Récupérer changement depuis repo disant
 
 ---
 
-Merger les changement précédemment récupéré (de master)
+Merger les changement précédemment récupérés (de master)
     
 ````$ git merge origin/master````
 
 ---
 
-Exécuter les 2 précédents actions à la fois 
+Exécuter les 2 précédentes actions à la fois 
     
 ````$ git pull````
 
 ---
 
-Après un fetch, merger les changements du repo distant sans prendre en compte les modifications local
+Après un fetch, merger les changements du repo distant sans prendre en compte les modifications locales
     
 ````$ git reset --hard origin/master````
 
@@ -216,7 +216,7 @@ Changer de branche
 
 Copier une branche d'un repo distant
 
-````$ git checkout -b nomBranche origin/nomBranche```` (récupère la branche distante toute en créant une branche local du même nom, puis se positionne sur cette dernière)
+````$ git checkout -b nomBranche origin/nomBranche```` (récupère la branche distante toute en créant une branche locale du même nom, puis se positionne sur cette dernière)
 
 ---
 
@@ -258,7 +258,7 @@ Lister les branches par ordre chronologique de son dernier commit (plus récente
 Merge :
 -------
 
-Merger une branche (se positionner sur la branche sur laquelle on souhaite merger et s'assurer que les branches soit à jour) :
+Merger une branche (se positionner sur la branche sur laquelle on souhaite merger et s'assurer que les branches soient à jour) :
     
 ````$ git merge nomBranche````
 
@@ -267,7 +267,7 @@ Merger une branche (se positionner sur la branche sur laquelle on souhaite merge
 
 ---
 
-Les éventuelles conflits se résolve soit "à la main" (dans le fichier), soit en précisant quel version on souhaite garder : 
+Les éventuels conflits se résolvent soit "à la main" (dans le fichier), soit en précisant quelle version on souhaite garder : 
     
 ````$ git checkout --ours fileName```` (récupère notre version, en local la plupart du temps)
 
@@ -301,7 +301,7 @@ Annuler un rebase (on perd ce qui est staged)
     
 ````$ git rebase --abort````
 
-Après avoir rebase master sur une branche de type feature (à condition que les deux soit à jour) :
+Après avoir rebase master sur une branche de type feature (à condition que les deux soient à jour) :
 
 ````$ git push --force origin feature-branch````
 
