@@ -11,6 +11,7 @@ Ionic vs React Native
       * React Native augmente constament (triplé en une année)
       * Ionic reste constant (les montées de Ionic à la fin de l'été 2016 n'a pas de sens)
 * Microsoft à créer un plugin pour créer des applications Windows avec React Native : https://github.com/Microsoft/react-native-windows
+* Présentation conf Ionic PWA : https://drive.google.com/open?id=0B9OFrqU1y2LpTHdwUTdTTUZjVmM
 * Article Ionic vs React Native : 
   * comme pour les batailles React vs Angular, la communauté React est beaucoup plus présente sur le web, donc React gagne tous le temps
   * https://www.codementor.io/fmcorz/react-native-vs-ionic-du1087rsw
