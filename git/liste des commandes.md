@@ -308,12 +308,13 @@ Après avoir rebase master sur une branche de type feature (à condition que les
 * IMPORTANT (__--force__) : 
   * si la branche de type feature à déjà été poussé sur le répo distant, on est train d'essayer de remplacer son historique de commits donc il faudra forcer :
     * S'assurer que personne d'autre n'a travailler sur cette même branche :
+      * ````$ get fetch ````
       * ````$ git diff nomBranche origin/nomBranche````
       * si diff, puller
     * ````$ git push origin feature-branch --force````
   * maintenant que l'on a forcé l'historique de répo distant si une personne récupère notre branche, même problème (même sans avoir pushé quoi que ce soit) :
     * ````$ get fetch ````
-    * idem check diff
+    * ````$ git diff nomBranche origin/nomBranche````
     * ````$ git reset origin/nomBranche --hard````
 
 Taguer un instant donné :
