@@ -293,7 +293,7 @@ Annuler un cherry-pick
 Rebase :
 -------
 
-Rebase une branche
+Rebase une branche afin de ne pas polluer l'historique de "commit de merge" (uniquement pour mettre à jour des branches de type feature) :
     
 ````$ git rebase nomBranche````
 
