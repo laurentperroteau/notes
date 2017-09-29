@@ -24,7 +24,7 @@
     rc = !git reset --hard HEAD && git clean -df # même chose avec un clean
     undo = reset --soft HEAD^ # supprimer le dernier commit
     di = "!f() { git diff --ignore-space-change $1; }; f"
-    dio = "!f() { git diff $1 origin/$1; }; f"
+    drb = "!f() { git diff $1 origin/$1; }; f"
     dic = di --cached
     f = fetch origin
     co = checkout
