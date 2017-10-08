@@ -1,4 +1,4 @@
-Comparatif de mes expériences sur projet agile
+Comparatif expériences de projet agile
 ==============================================
 
 | Type de projet     | Qty dev | Qui PO | Qui SM       | Calcul | Rétro / amél. | Liv. client | Compl. métier | QA méth.            | QA projet | 
