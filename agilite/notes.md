@@ -69,39 +69,15 @@ Toujours timeboxer
 Rôles :
 -------
 
+* Product Owner :
+  * responsable du product backlog, doit maximiser la valeur du produit et le travail de l'équipe de développement
+  * Compétences : orienté business, c'est le client ou son représentant
 * ScrumMaster : 
-  * organise et anime les différents rituels de la méthode Scrum :
+  * facilitateur, veille au respect des procédures Scrum et organise/anime les différents rituels :
     * Sprint planning
     * Daily stand-up ou  Daily Scrum
     * Demo/Sprint review
     * Rétrospective
   * Compétences : de préférence un développeur le reste du temps (ou ex-dev si Scrumaster à temps plein)  
-
-Organisation tableaux (méthodes SCRUM) :
-----------------------------------------
-
-* __Roadmap__ (ou cahier des charges dans le pire des cas)
-  * liste de feature global à transformer en epic/épopée
-  * [ex trello](https://trello.com/b/lgXkJqsF/roadmap-example-folding-burritos)
-* __Backlog__ : 
-  * vue de toutes les US
-  * pas de colonne mais une grande liste d'US rangée par sprint (bientôt ready en haut du backlog) ou epic/épopée (en bas du backlog)
-  * [ex epic](https://trello.com/b/JED7vZPv/epics-example-folding-burritos)
-* __Kanban__ : 
-  * vue de toutes les US active (en rédac ou en dev)
-  * colonnes : Rédac à faire, Rédac en cours, US ready, To do, Doing, To test, Done
-  * [ex kanban](https://trello.com/b/R1AALZw6/kanban-example-folding-burritos)
-* __Scrum / Sprint__ :
-  * vue des US d'un sprint (en préparation, en cours ou fini)
-  * colonnes : To do, Doing, To Review, To test, Done
-  
-### Comment faire simple avec Trello : 
-
-  * titre de la carte : 15 (Epopée) Mon petit titre
-  * un grand tableau Roadmap/Backlog/Kanban avec 5 colonnes :
-    * Roadmap : un grand pense-bête sans organisation précise
-    * Epopée : une carte par épopée qui contient une liste des US (les items des listes peuvent se convertir en carte)
-    * Rédac à faire
-    * Rédac en cours
-    * US ready => à déplacer dans tableau de sprint
-  * un tableau pour chaque sprint
+* Equipe de développement :
+  * responsables de livrer les US en recette/preprod et d'en faire la démo
