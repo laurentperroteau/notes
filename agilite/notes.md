@@ -43,7 +43,7 @@ Placer des post it dans les cases :
   
 Sortir les axes concrets d'amélioration faisable dans le prochain sprint des 2 dernières cases, possibilité de considérer les 2 premières comme acquise.
 
-Faire des points au fur et à mesure pour savoir les actions doivent :
+Faire des points au fur et à mesure pour savoir si les actions doivent être :
 * A continuer/commencer
 * Terminée/A arrêter
 * A faire / refaire autrement
