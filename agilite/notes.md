@@ -3,10 +3,6 @@ Notes agilité
 
 > notes pour ScrumMaster/développeurs et pas PO/BA/client
 
-Equipe DEV :
----------------
-
-
 ![Représentation des étapes](http://www.aim-services.ch/blog/wp-content/uploads/2015/04/scrum-web.png)
 
 
