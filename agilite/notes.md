@@ -1,10 +1,11 @@
 Notes agilité
 ============
 
-> notes pour ScrumMaster/développeurs et pas PO/BA/client
+> notes pour ScrumMaster/développeurs et pas PO/client
 
 ![Représentation des étapes](http://www.aim-services.ch/blog/wp-content/uploads/2015/04/scrum-web.png)
 
+Voir [lexique](http://www.agiliste.fr/lexique-agile-scrum/)
 
 * __Prérequis__ : 
   * être au moins 2 développeurs (pour PR, tests croisés etc..., et puis les rituels tous seules, pas génial)
@@ -70,7 +71,7 @@ Rôles :
 -------
 
 * Product Owner :
-  * responsable du product backlog, doit maximiser la valeur du produit et le travail de l'équipe de développement
+  * représentant des utilisateurs, responsable du product backlog, doit maximiser la valeur du produit et le travail de l'équipe de développement
   * Compétences : orienté business, c'est le client ou son représentant
 * ScrumMaster : 
   * facilitateur, veille au respect des procédures Scrum et organise/anime les différents rituels :
