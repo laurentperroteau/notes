@@ -1,11 +1,13 @@
 Notes agilité
 ============
 
-> agilité orienté dev et pas tant côté client
+> notes pour ScrumMaster/développeurs et pas PO/BA/client
 
 Equipe DEV :
 ---------------
 
+* __Prérequis__ : 
+ * être au moins 2 développeurs (pour PR, tests croisés etc..., et puis les rituels tous seules, pas génial)
 * Ne pas commencer une US si les specs ne sont pas complète et claire 
 * __Simplicité__, dans la mesure où le client/CP/PO est capable de comprendre le principe du MVP, créer des US petites et simples :
   * ex: ne développer que 2 écrans sur les 10/15 prévues 
@@ -18,6 +20,16 @@ Equipe DEV :
       * on valide le besoin réel après le premier sprint
       * le choix et l'instalation d'un plugin étant importante et chronophage, pas de temps perdu
     * pourquoi un datepicker comme exemple ? C'est typiquement un élément qui "peut" paraître simple quand on est pas technique mais qui est en réalité impliquer beaucoup de chose (comportement, mobile, limite, localisation, format d'échange des dates etc...)
+* __Transparence__ :
+  * L'idée c'est d'éviter cela : 
+    * ![Représentation des projets selon chacun](https://img.scoop.it/WrUBWnCbJR0JIQaC93Nvcjl72eJkfbmt4t8yenImKBVvK0kTmF0xjctABnaLJIm9)
+  * Comment ?
+    * c'est le client qui écrit les US (si ce n'est pas le cas, il doit les valider avant qu'elles soit ready)
+    * livraison en continu : 
+      * donc on peut tout revoir dès les premiers sprints/livraisons
+      * et donc pas de surprise à la fin du projet
+    * si deadline, le client sait ce qui peut être fait d'ici X sprint (donc X temps)
+    * le développeur ne pourra pas passer une US à "done" sans qu'un autre développeur et le client ai testé
       
 Démo :
 ------
@@ -53,6 +65,17 @@ Réunion :
 ---------
 
 Toujours timeboxer
+
+Rôles :
+-------
+
+* ScrumMaster : 
+  * organise et anime les différents rituels de la méthode Scrum :
+    * Sprint planning
+    * Daily stand-up ou  Daily Scrum
+    * Demo/Sprint review
+    * Rétrospective
+  * Compétences : de préférence un développeur le reste du temps (ou ex-dev si Scrumaster à temps plein)  
 
 Organisation tableaux (méthodes SCRUM) :
 ----------------------------------------
