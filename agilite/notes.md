@@ -6,9 +6,13 @@ Notes agilité
 Equipe DEV :
 ---------------
 
+
+![Représentation des étapes](http://www.aim-services.ch/blog/wp-content/uploads/2015/04/scrum-web.png)
+
+
 * __Prérequis__ : 
- * être au moins 2 développeurs (pour PR, tests croisés etc..., et puis les rituels tous seules, pas génial)
-* Ne pas commencer une US si les specs ne sont pas complète et claire 
+  * être au moins 2 développeurs (pour PR, tests croisés etc..., et puis les rituels tous seules, pas génial)
+  * Ne pas commencer une US si les specs ne sont pas complète et claire 
 * __Simplicité__, dans la mesure où le client/CP/PO est capable de comprendre le principe du MVP, créer des US petites et simples :
   * ex: ne développer que 2 écrans sur les 10/15 prévues 
       * avantages/résultats => première livraison plus tôt, donc retours du client plus rapides
