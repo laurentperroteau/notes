@@ -62,7 +62,7 @@ Organisation tableaux (méthodes SCRUM) :
   * [ex trello](https://trello.com/b/lgXkJqsF/roadmap-example-folding-burritos)
 * __Backlog__ : 
   * vue de toutes les US
-  * pas de colonne mais une grande liste d'US rangée par sprint (bientôt ready, haut du backlog) ou epic/épopée (bas du backlog)
+  * pas de colonne mais une grande liste d'US rangée par sprint (bientôt ready en haut du backlog) ou epic/épopée (en bas du backlog)
   * [ex epic](https://trello.com/b/JED7vZPv/epics-example-folding-burritos)
 * __Kanban__ : 
   * vue de toutes les US active (en rédac ou en dev)
