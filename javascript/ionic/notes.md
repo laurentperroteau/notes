@@ -1,7 +1,10 @@
 Notes Ionic
 ===========
 
-> les dernièrs test effectué, donc les notes concerne Ionic 3
+> concerne Ionic 3
+
+Routing :
+---------
 
 * le lazyloading et le deep-link (hyperlink pour app) sont setter par défaut. Pour avoir des URLs de type "browser" :
 ````ts
