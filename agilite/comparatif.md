@@ -10,20 +10,20 @@ Comparatif expériences de projet agile
 
 Conclusion :
 ------------
-* Type de projet/Qty dev : 
+* __Type de projet/Qty dev__ : 
   * compliqué sur petit projet, besoin d'au moins 2 pers. par métier (donc 4 si front et back)
   * Porte ces fruits sur des sprints 
-* Qui Product Owner :
+* __Qui Product Owner ?__ :
   * une seule personne 
   * idéalement ne faisant pas partie de l'équipe de dev
   * si le client ne peut pas être PO (par temps ou savoir), le PO interne peut être en charge du product backlog mais c'est le client qui doit gérer les priorités, être présent aux démos et tester l'application
-* Qui ScumMaster :
+* __Qui ScumMaster ?__ :
   * le lead tech du projet (peut être épaulé du CP/PO si internet)
-* Calculs des US :
+* __Calculs des US ?__ :
   * En point de complexité (après 2 sprints, on aura une moyenne de vélocité qui pourra s'exprimer en heure si besoins pour les plannings)
-* Rétro / amél. :
+* __Rétrospective et amélioration continue__ :
   * même rapide (sans jeux), indipensable
-* Liv. client :
+* __Livraison en continue__ :
   * absolument obligatoire, tout en dépend
 
 ### Pourquoi des différence entre la qualité de la méthode et du projet :
