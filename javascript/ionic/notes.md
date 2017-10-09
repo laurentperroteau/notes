@@ -3,6 +3,8 @@ Notes Ionic
 
 > concerne Ionic 3
 
+[Tendance des Ionic](https://ionicframework.com/survey/2017)
+
 Routing :
 ---------
 
