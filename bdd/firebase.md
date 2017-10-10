@@ -12,10 +12,4 @@ Firebase CLI :
 * `$ firebase init` : init dans dossier courant un projet au choix
 * `$ firebase database:get /albums` : print document json du path `albums`
 * `$ firebase database:remove /posts` : suppr (demande de confirmer avant, `--confirm` pour s'en passé)
-* `$ firebase database:set /test test-import.json` : remplace (ou insert si nouveau) le json d'un fichier sur le path `test`
-````json
-// test-import.json
-{
-  "coucou" : "test"
-}
-````
+* `$ firebase database:set /test test-import.json` : remplace (ou insert si nouveau) le json d'un fichier sur le path `test` (le fichier `{ "coucou" : "test" }`)
