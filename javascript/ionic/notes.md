@@ -3,7 +3,10 @@ Notes Ionic
 
 > concerne Ionic 3
 
-[Tendance des Ionic](https://ionicframework.com/survey/2017)
+Ressources :
+------------
+
+* [Tendance des développeurs Ionic](https://ionicframework.com/survey/2017)
 
 Routing :
 ---------
@@ -24,3 +27,6 @@ this.navCtrl.push('name-super-item-detail', {item});
 ````ts
 this.viewCtrl.dismiss(newItem);
 ````
+
+__Conséquences :__
+* au F5 d'une page fonctionnant avec une données transmise via le push, on a pas la donnée !
