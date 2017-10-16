@@ -15,8 +15,7 @@
 [alias]
     c = commit
     amend = commit --amend
-    b = branch -a
-    br = branch
+    b = for-each-ref --sort=committerdate refs/heads/ --format='%(refname) %(committerdate:relative)'
     s = status -sb -uall
     a = add
     k = !git add . && git commit
