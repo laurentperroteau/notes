@@ -31,3 +31,17 @@ Une analogie du fonctionnement de la méthode BEM :
 ```
 
 Pour en savoir plus, lire cette traduction de [GuideCSS](http://guidecss.fr/convention.html).
+
+Listes problèmes CSS résolu via BEM :
+-------------------------------------
+
+
+La liste (issu de la [présentation](https://speakerdeck.com/vjeux/react-css-in-js) CSS in JS) :
+
+1. Global namespace : oui
+2. Dependencies : non, tout les styles qui peuvent être global sont chargé
+3. Dead code elimination : non, besoin de Webpack/JS composant
+4. Minification : non
+5. Sharing constants : CSS dans JS pour ce cas
+6. Non-deterministics resolution : oui
+7. Isolation : oui
