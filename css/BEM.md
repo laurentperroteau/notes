@@ -35,8 +35,9 @@ Pour en savoir plus, lire cette traduction de [GuideCSS](http://guidecss.fr/conv
 Listes problèmes CSS résolu via BEM :
 -------------------------------------
 
+> TODO: récupérer autres problèmes CSS 
 
-La liste (issu de la [présentation](https://speakerdeck.com/vjeux/react-css-in-js) CSS in JS) :
+La liste (issu de la [présentation "CSS in JS"](https://speakerdeck.com/vjeux/react-css-in-js)) :
 
 1. Global namespace : oui
 2. Dependencies : non, tout les styles qui peuvent être global sont chargé
