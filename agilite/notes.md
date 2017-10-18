@@ -32,6 +32,26 @@ Voir [lexique](http://www.agiliste.fr/lexique-agile-scrum/)
     * si deadline, le client sait ce qui peut être fait d'ici X sprint (donc X temps)
     * le développeur ne pourra pas passer une US à "done" sans qu'un autre développeur et le client ai testé
       
+Les douze principes :
+---------------------
+
+> ... et comment on peut les mettres concrètement en application
+
+[source](https://fr.wikipedia.org/wiki/M%C3%A9thode_agile#Douze_principes_g.C3.A9n.C3.A9raux)
+
+1. __Satisfaire le client en priorité__ _=> même si un choix est frustrant, c'est lui qui paye, c'est lui qui a raison (dans la mesure ou il n'entrave pas le projet)_
+2. __Accueillir favorablement les demandes de changement__ _=> c'est le cycle de vie normal d'un produit, c'est pour cela que l'on doit faire simple (i.e.: point 10)_
+3. __Livrer le plus souvent possible des versions opérationnelles de l’application__ _=> c'est le seul moyen de passer "réelement a Done" une functionnalitée ! Permet également des retours du client plus rapides donc pas de surprise à la fin du projet_
+4. __Assurer une coopération permanente entre le client et l’équipe projet__ _=> ..._
+5. __Construire des projets autour d’individus motivés__ _=> ..._
+6. __Privilégier la conversation en face à face__ _=> ..._
+7. __Mesurer l’avancement du projet en termes de fonctionnalités de l’application__ _=> ..._
+8. __Faire avancer le projet à un rythme soutenable et constant__ _=> ..._
+9. __Porter une attention continue à l’excellence technique et à la conception__ _=> ..._
+10. __Faire simple__ _=> ..._
+11. __Responsabiliser les équipes__ _=> ..._
+12. __Ajuster à intervalles réguliers son comportement et ses processus pour être plus efficace__ _=> ..._
+
 Démo :
 ------
 
