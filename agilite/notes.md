@@ -35,13 +35,13 @@ Voir [lexique](http://www.agiliste.fr/lexique-agile-scrum/)
 Les douze principes :
 ---------------------
 
-> ... et comment on peut les mettres concrètement en application
+> ... et comment les mettres concrètement en application
 
-[source](https://fr.wikipedia.org/wiki/M%C3%A9thode_agile#Douze_principes_g.C3.A9n.C3.A9raux)
+[Source](https://fr.wikipedia.org/wiki/M%C3%A9thode_agile#Douze_principes_g.C3.A9n.C3.A9raux)
 
 1. __Satisfaire le client en priorité__ _=> même si un choix est frustrant, c'est lui qui paye, c'est lui qui a raison (dans la mesure ou il n'entrave pas le projet)_
 2. __Accueillir favorablement les demandes de changement__ _=> c'est le cycle de vie normal d'un produit, c'est pour cela que l'on doit faire simple (i.e.: point 10)_
-3. __Livrer le plus souvent possible des versions opérationnelles de l’application__ _=> c'est le seul moyen de passer "réelement a Done" une functionnalitée ! Permet également des retours du client plus rapides donc pas de surprise à la fin du projet_
+3. __Livrer le plus souvent possible des versions opérationnelles de l’application__ _=> c'est le seul moyen de passer "réelement a Done" une functionnalitée ! Permet également des retours du client plus rapides donc moins de surprise dans la vie du projet (on ne parle pas de fin projet!)_
 4. __Assurer une coopération permanente entre le client et l’équipe projet__ _=> ..._
 5. __Construire des projets autour d’individus motivés__ _=> i.e.: point 11_
 6. __Privilégier la conversation en face à face__ _=> ..._
