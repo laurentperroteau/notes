@@ -43,14 +43,14 @@ Les douze principes :
 2. __Accueillir favorablement les demandes de changement__ _=> c'est le cycle de vie normal d'un produit, c'est pour cela que l'on doit faire simple (i.e.: point 10)_
 3. __Livrer le plus souvent possible des versions opérationnelles de l’application__ _=> c'est le seul moyen de passer "réelement a Done" une functionnalitée ! Permet également des retours du client plus rapides donc pas de surprise à la fin du projet_
 4. __Assurer une coopération permanente entre le client et l’équipe projet__ _=> ..._
-5. __Construire des projets autour d’individus motivés__ _=> ..._
+5. __Construire des projets autour d’individus motivés__ _=> i.e.: point 11_
 6. __Privilégier la conversation en face à face__ _=> ..._
-7. __Mesurer l’avancement du projet en termes de fonctionnalités de l’application__ _=> ..._
-8. __Faire avancer le projet à un rythme soutenable et constant__ _=> ..._
-9. __Porter une attention continue à l’excellence technique et à la conception__ _=> ..._
-10. __Faire simple__ _=> ..._
-11. __Responsabiliser les équipes__ _=> ..._
-12. __Ajuster à intervalles réguliers son comportement et ses processus pour être plus efficace__ _=> ..._
+7. __Mesurer l’avancement du projet en termes de fonctionnalités de l’application__ _=> la [méthode SCRUM](https://fr.wikipedia.org/wiki/Scrum_(Boite_%C3%A0_outils)) de faire le point sur l'avancement à tout moment_
+8. __Faire avancer le projet à un rythme soutenable et constant__ _=> la méthode SCRUM nous rensigne sur la vélocité sans à aucun moment parler d'heure de travail_
+9. __Porter une attention continue à l’excellence technique et à la conception__ _=> mettre en place [certaines pratique de la méthode Xp](https://fr.wikipedia.org/wiki/Extreme_programming#Pratiques) permet cela_
+10. __Faire simple__ _=> c'est ainsi plus facile à faire évoluer_
+11. __Responsabiliser les équipes__ _=> i.e.: point 5_
+12. __Ajuster à intervalles réguliers son comportement et ses processus pour être plus efficace__ _=> l'amélioration en continu, c'est ce qui permet d'adapter la méthodologie à chaque projet (si besoin) et de faire évoluer tous le monde_
 
 Démo :
 ------
