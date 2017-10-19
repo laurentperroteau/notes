@@ -5,7 +5,7 @@ Notes agilité
 
 ![Représentation des étapes](http://www.aim-services.ch/blog/wp-content/uploads/2015/04/scrum-web.png)
 
-Voir [lexique](http://www.agiliste.fr/lexique-agile-scrum/)
+_En anglais : Product Backlog (ou backlog), Sprint planning, Sprint, Daily Scrum (ou Daily Meetup, Daily Stand-up), Sprint review (la démo) et Sprint retrospective (la rétro). Voir [lexique](http://www.agiliste.fr/lexique-agile-scrum/)._
 
 * __Prérequis__ : 
   * être au moins 2 développeurs (pour PR, tests croisés etc..., et puis les rituels tous seules, pas génial)
