@@ -11,7 +11,7 @@ Comparatif expériences de projet agile
 Conclusion :
 ------------
 * __Type de projet/Qty dev__ : 
-  * besoin d'au moins de 2 personne par métier (donc 4 si front et back) 
+  * besoin d'au moins de 2 personne par métier (donc 4 si front et back, 2 si full-stack) 
 * __Complexité métier__ :
   * l'intérêt de l'agilité pour l'équipe est toujours vrai mais pour le client, elle est proportionnel à la grandeur et la complexité du projet 
 * __Qui Product Owner ?__ :
