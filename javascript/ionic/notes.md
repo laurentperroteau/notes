@@ -7,6 +7,9 @@ Ressources :
 ------------
 
 * [Tendance des développeurs Ionic](https://ionicframework.com/survey/2017)
+* [Ionic staters](https://ionicframework.com/docs/cli/starters.html)
+  * `conference` n'a pas été actualisé à Ionic 3 (lazyload, @IonicPage etc...) mais c'est une vrai app complète
+  * `super` est bien à jour mais c'est plus un ensemble d'exemple
 
 Routing :
 ---------
