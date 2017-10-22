@@ -34,3 +34,6 @@ this.viewCtrl.dismiss(newItem);
 __Conséquences :__
 * __Good__ : ça force la création de composant [stateful/stateless](https://toddmotto.com/stateful-stateless-components)
 * __Bad__ : au F5 d'une page fonctionnant avec une données transmise via le push, on a pas la donnée !
+
+### TODO :
+* core, shared model ionic 3, poser question forum
