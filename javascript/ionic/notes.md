@@ -10,6 +10,12 @@ Ressources :
 * [Ionic staters](https://ionicframework.com/docs/cli/starters.html)
   * `conference` n'a pas été actualisé à Ionic 3 (lazyload, @IonicPage etc...) mais c'est une vrai app complète
   * `super` est bien à jour mais c'est plus un ensemble d'exemple
+  
+Différence avec Angular/Angular cli  :
+-------------------------
+
+* embarque tslint-eslint-rules et tslint-ionic-rules mais certaines n'ont pas l'ai d'être les mêmes
+* le polyfill est généré pendant le build (et est inclus dans le index.html)
 
 Routing :
 ---------
