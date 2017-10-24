@@ -1,14 +1,8 @@
 {
-  /* Règles en plus de Angular CLI (du décembre 2016) */
+  "comment": "Modification des règles de Angular CLI",
   "rules": {
-    "directive-selector": [true, "attribute", ["app", "fui", "flot"], "camelCase"],
-    "component-selector": [true, "element", ["app", "fui", "flot"], "kebab-case"],
-    "ordered-imports": [
-      true,
-      {
-        "import-source-order": "case-insensitive",
-        "named-imports-order": "case-insensitive"
-      }
-    ]
+    "directive-selector": [true, "attribute", ["app", "my"], "camelCase"],
+    "component-selector": [true, "element", ["app", "my"], "kebab-case"],
+    "ordered-imports":true
   }
 }
