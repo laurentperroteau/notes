@@ -1,0 +1,14 @@
+{
+  /* Règles en plus de Angular CLI (du décembre 2016) */
+  "rules": {
+    "directive-selector": [true, "attribute", ["app", "fui", "flot"], "camelCase"],
+    "component-selector": [true, "element", ["app", "fui", "flot"], "kebab-case"],
+    "ordered-imports": [
+      true,
+      {
+        "import-source-order": "case-insensitive",
+        "named-imports-order": "case-insensitive"
+      }
+    ]
+  }
+}
