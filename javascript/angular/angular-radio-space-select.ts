@@ -1,16 +1,18 @@
+import * as _ from 'lodash';
+
 import {
   Component,
-  EventEmitter,
   forwardRef,
   HostBinding,
   Input,
   OnInit,
-  Output,
   ViewEncapsulation,
 } from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
 
 import { noop } from '../../utils';
+import { InputDefaultsService } from '../input/input-defaults.service';
+import { InputOptions } from '../models/input-options.model';
 
 export const RadioComponentProvider = {
   provide: NG_VALUE_ACCESSOR,
@@ -27,28 +29,42 @@ interface RadioItem {
   selector: 'fui-radio',
   template: `
     <div
-      *ngFor="let item of radioItems"
-      #radioElem
-      (focus)="onFocus(item)"
-      (blur)="onBlur()"
-      (keyup.space)="onSpace($event)"
-      (keydown.space)="onSpace($event, item)"
-      tabindex="0"
-      class="radio-item"
-      [class.radio-item-marge]="radioPosition == 'horizontal' && isFirst">
-      <label
-        [class.checked]="value === item.value"
-        [class.disabled]="radioIsDisabled"
-        (click)="setValueOnClick(item.value)">
-        {{ item.label }}
-      </label>
+      class="radio-label"
+      [class.validation-error]="!options.valid">
+      <span>{{ options.label }} </span><span *ngIf="options.disabled" class="obligatoire">*</span>
+    </div>
+    <div class="radio-inputs">
+      <div
+        *ngFor="let item of radioItems"
+        (focus)="onFocus(item)"
+        (blur)="onBlur()"
+        (keyup.space)="onSpace($event)"
+        (keydown.space)="onSpace($event, item)"
+        tabindex="0"
+        class="radio-item"
+        [class.radio-item-marge]="radioPosition == 'horizontal'">
+        <label
+          [class.checked]="value === item.value"
+          [class.disabled]="options.disabled"
+          (click)="setValueOnClick(item.value)">
+          {{ item.label }}
+        </label>
+      </div>
     </div>
   `,
+  styleUrls: ['./radio.component.scss'],
   providers: [RadioComponentProvider],
   encapsulation: ViewEncapsulation.None,
 })
-export class RadioComponent implements ControlValueAccessor {
-  @Input() radioLabel: string;
+export class RadioComponent implements OnInit, ControlValueAccessor {
+  @HostBinding('class.fui-radio') classComponent = true;
+  @HostBinding('class.fui-radio-hidden') componenthide = false;
+  @HostBinding('class.fui-radio-vertical') verticalLayout = false;
+  @HostBinding('class.fui-radio-side-by-side') sideBySideLayout = false;
+
+  @Input() options: Partial<InputOptions> = new InputOptions(); // TODO: utiliser InputOptions pour label, required, disable
+
+  // Optionnel : oui/non par défaut
   @Input() radioItems: RadioItem[] = [
     {
       label: 'Oui',
@@ -59,9 +75,7 @@ export class RadioComponent implements ControlValueAccessor {
       value: false
     }
   ];
-  @Input() radioIsRequired = true;
-  @Input() radioIsValid = true;
-  @Input() radioIsDisabled = false;
+  @Input() radioPosition: 'horizontal' | 'vertical' | 'side-by-side' = 'vertical';
 
   @Input() set value(val: any) {
     this.writeValue(val);
@@ -75,6 +89,20 @@ export class RadioComponent implements ControlValueAccessor {
   inputValue: any;
 
   currentFocusRadioItem: RadioItem;
+
+  constructor(private defaults: InputDefaultsService) {}
+
+  ngOnInit(): void {
+    this.verticalLayout = this.radioPosition === 'vertical';
+    this.sideBySideLayout = this.radioPosition === 'side-by-side';
+
+    this.options = this.options || new InputOptions();
+    _.defaults(this.options, this.defaults);
+
+    if (this.options.hidden) {
+      this.componenthide = true;
+    }
+  }
 
   registerOnChange(fn: any): void {
     this.onChange = fn;
@@ -91,7 +119,7 @@ export class RadioComponent implements ControlValueAccessor {
   }
 
   setValueOnClick(value: any): void {
-    if (!this.radioIsDisabled) {
+    if (!this.options.disabled) {
       this.writeValue(value);
     }
   }
@@ -108,7 +136,7 @@ export class RadioComponent implements ControlValueAccessor {
 
   onSpace($event: Event, item: RadioItem) {
     if (this.currentFocusRadioItem && this.currentFocusRadioItem === item) {
-      $event.preventDefault();
+      $event.preventDefault ? $event.preventDefault() : ($event.returnValue = false);
       this.setValueOnClick(item.value);
     }
   }
