@@ -52,6 +52,15 @@ Les douze principes :
 11. __Responsabiliser les équipes__ _=> i.e.: point 5_
 12. __Ajuster à intervalles réguliers son comportement et ses processus pour être plus efficace__ _=> l'amélioration en continu, c'est ce qui permet d'adapter la méthodologie à chaque projet (si besoin) et de faire évoluer tous le monde_
 
+Estimation :
+------------
+<img src="https://danielettinger.files.wordpress.com/2015/07/img_2627.png" height="200">
+
+> ne jamais jugé la quantité d'une proposition, l'important c'est d'être constant
+
+* En point de complexité ([voir comparatif](../comparatif.md))
+* En "[planning pocker](https://fr.wikipedia.org/wiki/Planning_poker)" : au moins au début du projet et si il y a des niveaux de connaissances différent (cela évite de se faire influencer)
+
 Démo :
 ------
 
