@@ -11,8 +11,8 @@ Ressources :
   * `conference` n'a pas été actualisé à Ionic 3 (lazyload, @IonicPage etc...) mais c'est une vrai app complète
   * `super` est bien à jour mais c'est plus un ensemble d'exemple
   
-Différence avec Angular/Angular CLI  :
---------------------------------------
+Différence de config avec Angular/Angular CLI  :
+------------------------------------------------
 
 * embarque tslint-eslint-rules et tslint-ionic-rules (qui ne sont pas dans package.json), ce n'est apparement pas exactemnet les mêmes règles que Angular CLI
 * le polyfill est généré pendant le build (et est inclus dans le index.html)
@@ -40,6 +40,22 @@ this.viewCtrl.dismiss(newItem);
 __Conséquences :__
 * __Good__ : ça force la création de composant [stateful/stateless](https://toddmotto.com/stateful-stateless-components)
 * __Bad__ : au F5 d'une page fonctionnant avec une données transmise via le push, on a pas la donnée !
+
+Modules :
+---------
+
+Les IonicPage (qui sont des modules) ont besoin d'importer le composant dans IonicPageModule :
+
+````ts
+imports: [ IonicPageModule.forChild(FrontHomePage) ],
+````
+
+Les composants des modules "maison" (autre que le root et les pages) ont besoin d'être ajouté à IonicModule :
+
+````ts
+imports: [ IonicModule.forRoot(AlbumListComponent) ],
+````
+
 
 ### TODO :
 * core, shared model ionic 3, poser question forum
