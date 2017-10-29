@@ -22,13 +22,14 @@ Routing :
 
 * on ne "navigue" pas vers un composant, on le "push"
 * IonicPage
- * our avoir des URLs de type "browser" :
+  * pour avoir des URLs de type "browser" :
 ````ts
 @IonicPage({
   name: 'name-item-detail', // push les pages avec le nom et non la classe
   segment: 'path-item-detail/:id' // url ajouter
 })
 ````
+  * les url pour app [via deeplinks](https://ionicframework.com/docs/native/deeplinks/) n'est pas utilisé par défaut (_TODO: tester si en le settant cela remplate les segement des IonicPage_)
 
 Modules :
 ---------
@@ -44,7 +45,3 @@ Les composants des modules "maison" (autre que le root et les pages) ont besoin 
 ````ts
 imports: [ IonicModule.forRoot(AlbumListComponent) ],
 ````
-
-
-### TODO :
-* core, shared model ionic 3, poser question forum
