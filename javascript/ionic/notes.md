@@ -15,6 +15,7 @@ Différence de config avec Angular/Angular CLI  :
 ------------------------------------------------
 
 * embarque tslint-eslint-rules et tslint-ionic-rules (qui ne sont pas dans package.json), ce n'est apparement pas exactemnet les mêmes règles que Angular CLI
+  * __TODO__ : voir ajouter [codelyzer](https://github.com/mgechev/codelyzer), le lint d'angular
 * le polyfill est généré pendant le build (et est inclus dans le index.html)
 
 Routing :
