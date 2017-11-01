@@ -18,7 +18,7 @@ Organisation tableaux :
   * vue des US d'un sprint (en préparation, en cours ou fini)
   * colonnes : To do, Doing, To Review, To test, Done
   
-### Comment faire simple avec Trello (ou GitLab Boards) : 
+### Comment faire simple avec Trello : 
 
   * titre de la carte : 15 (Epopée) Mon petit titre
   * un grand tableau Roadmap/Backlog/Kanban avec 5 colonnes :
@@ -28,3 +28,10 @@ Organisation tableaux :
     * Rédac en cours
     * US ready => à déplacer dans tableau de sprint
   * un tableau pour chaque sprint
+
+#### Notes GitLab Boards : 
+
+* génial pour l'intégration continue 
+* pas utilisable pour le "Roadmap/Backlog/Kanban"
+* pourrait service seulement pour les sprints mais ça fait 2 outils :(
+* si 2 repos front/backs, problèmatique
