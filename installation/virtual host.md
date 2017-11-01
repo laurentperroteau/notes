@@ -10,6 +10,10 @@ Virtual host
 * ou 
 * `sudo nano /etc/apache2/sites-available/default`
 
+### Ajouter le host :
+
+* `sudo nano /etc/hosts`
+
 ### VirtualHost :
 
 ````
@@ -34,8 +38,19 @@ Virtual host
 
 ### Appliquer changement :
 
+* `sudo /etc/init.d/apache2 restart`
+
+ou 
+
+* `sudo systemctl restart apache2`
+
+ou
+
 * `sudo service apache2 restart`
 
+#### TODO :
+
+* voir déplacer les fichiers de conf dans `/home` avec un lien symbolique
 
 #### (opt) Fichier de conf dans le home :
 
