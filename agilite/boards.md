@@ -18,7 +18,7 @@ Organisation tableaux :
   * vue des US d'un sprint (en préparation, en cours ou fini)
   * colonnes : To do, Doing, To Review, To test, Done
   
-### Comment faire simple avec Trello : 
+### Comment faire simple avec Trello (ou GitLab Boards) : 
 
   * titre de la carte : 15 (Epopée) Mon petit titre
   * un grand tableau Roadmap/Backlog/Kanban avec 5 colonnes :
