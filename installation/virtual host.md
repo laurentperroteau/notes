@@ -3,29 +3,22 @@ Virtual host
 
 > pour environnement LAMP
 
-Lien symboliques :
-------------------
 
-* `sudo ln -s /home/laurent/www/ve/web/equateur-voyage /var/www/equateur.voyage`
-
-
-Emplacement fichier conf Apache :
----------------------------------
+### Emplacement fichier conf Apache :
 
 * `sudo nano /etc/apache2/sites-available/000-default.conf`
 * ou 
 * `sudo nano /etc/apache2/sites-available/default`
 
-VirtualHost :
--------------
+### VirtualHost :
 
 ````
 <VirtualHost *:80>
-    ServerName blog.local
-    ServerAlias www.blog.local
-    DocumentRoot /var/www/blog
+    ServerName coucou.local
+    ServerAlias www.coucou.local
+    DocumentRoot /var/www/coucou
 
-    <Directory "/var/www/blog">
+    <Directory "/var/www/coucou">
         Options -Indexes -MultiViews +FollowSymLinks
         AllowOverride All
         Order allow,deny
@@ -34,13 +27,17 @@ VirtualHost :
 </VirtualHost>
 ````
 
-Appliquer changement :
-======================
+### Dossier dans local et lien symbolique
+
+* `mkdir cd ~/www/coucou` (ajouter index.html)
+* `sudo ln -s /home/laurentperroteau/www/coucou /var/www/coucou`
+
+### Appliquer changement :
 
 * `sudo service apache2 restart`
 
 
-### (opt) Fichier de conf dans le home :
+#### (opt) Fichier de conf dans le home :
 
 * `sudo nano coral.conf` (depuis /home/laurentperroteau/www/installation/coral.conf)
 * `sudo a2ensite coral.conf`
