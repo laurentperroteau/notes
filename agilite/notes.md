@@ -10,6 +10,8 @@ _En anglais : Product Backlog (ou backlog), Sprint planning, Sprint, Daily Scrum
 * __Prérequis__ : 
   * être au moins 2 développeurs (pour PR, tests croisés etc..., et puis les rituels tous seules, pas génial)
   * Ne pas commencer une US si les specs ne sont pas complète et claire 
+* __Pourquoi__ :
+  * _La méthode scrum est fondée sur la conviction que le développement logiciel est une activité par nature non-déterministe et que l'ensemble des activités de réalisation d'un projet complexe ne peut être anticipé et planifié. C'est en cela que le scrum s'oppose aux démarches prédictives telles que le cycle en V ([source](https://fr.m.wikipedia.org/wiki/Scrum_%28Boite_%C3%A0_outils%29?wprov=sfta1#Caract.C3.A9ristiques))._
 * __Simplicité__, dans la mesure où le client/CP/PO est capable de comprendre le principe du MVP, créer des US petites et simples :
   * ex: ne développer que 2 écrans sur les 10/15 prévues 
       * avantages/résultats => première livraison plus tôt, donc retours du client plus rapides
