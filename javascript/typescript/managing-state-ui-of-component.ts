@@ -1,99 +1,163 @@
 import * as _ from 'lodash';
+import { Component } from '@angular/core';
+
 import { Subject } from 'rxjs/Subject';
+import { Observable } from 'rxjs/Observable';
 
-import { LazyLoadEvent } from 'primeng/primeng';
+// Partie "lib"
+interface StateSubjectOptions {
+  value: any;
+  force: boolean;
+  end: boolean;
+}
 
-/**
- * Test de gestion des états sortie du composant, non fini et non testé
- * 
- * @notes, le type LazyLoadEvent vient de PrimeNg
- * @url: https://github.com/primefaces/primeng/blob/master/src/app/components/common/lazyloadevent.ts
- */
-export class States implements LazyLoadEvent {
-  init: boolean;
-  filterValues: FilterValues = {};
+class StatesSubject<T> extends Subject<any> {
+  constructor() {
+    super();
+  }
 
-  // Subject
-  filterChange = new Subject();
-  orderChange = new Subject();
-  rangeChange = new Subject();
+  set(val) {
+    this.next({value: val});
+  }
 
-  // Action
-  triggerFilter = new Subject();
-  triggerOrder = new Subject();
-  triggerRange = new Subject();
+  setForce(val?) {
+    const obj = {force: true};
+    this.next(val ? Object.assign(obj, {value: val}) : obj);
+  }
 
-  constructor(defaultStates: Partial<States>) {
-    _.merge(this, defaultStates);
-
-    /**
-     * Toutes les conditions qui permettent de déterminer
-     *   si il y a un réel changement d'état, si l'action est nécéssaire,
-     *   doivent se faire dans cette objet, dans les souscriptons suivantes
-     */
-    this.filterChange.subscribe((val: FilterValues) => {
-      if (val !== this.filterValues) {
-        Object.assign(this.filterValues, val);
-
-        this.triggerFilter.next(this.filterValues);
-      }
-    });
-
-    this.orderChange.subscribe((val: States) => {
-      if (val !== this) {
-        Object.assign(this, val);
-
-        this.triggerOrder.next(this);
-      }
-    });
-
-    this.rangeChange.subscribe((val: States) => {
-      if (val !== this) {
-        Object.assign(this, val);
-
-        this.triggerRange.next(this);
-      }
-    });
+  end() {
+    this.next({end: true});
   }
 }
 
-export class ClassNeedStaes<T> {
+export class BaseStates {
+  action: StatesSubject<StateSubjectOptions>[] = [];
+  onChangeAction: Observable<any>[] = [];
+
+  constructor(statesEnum: any) {
+    // TODO: créer un function loopOverEnum()
+    Object.keys(statesEnum).filter(key => isNaN(Number(statesEnum[key]))).forEach(index => {
+      this.action[index] = new StatesSubject<StateSubjectOptions>();
+      this.onChangeAction[index] = new Observable<any>();
+    });
+  }
+
+  setReducer(reducer: Function, actionEnum) {
+    this.onChangeAction[actionEnum] = reducer(this.action[actionEnum]);
+  }
+}
+
+// fin "lib"
+
+// 1. Lister les actions
+enum ACTION {
+  filter,
+  order,
+}
+
+/**
+ * Gestion des états UI (sortie du composant)
+ *
+ * @notes: non testé en prod
+ */
+export class States extends BaseStates {
+  init: boolean;
+  filter: string;
+  order: string;
+
+  constructor(actionEnum: any, defaultStates: Partial<States>) {
+    super(actionEnum);
+    _.merge(this, defaultStates);
+
+    /**
+     * 2. Gerer les actions (comme un reducer) en utilisant "map" ou "flapMap"
+     *
+     * @notes : ici les conditions qui permettent de déterminer
+     *   si il y a un réel changement d'état, si l'action est nécéssaire,
+     *   si elle doit entraîner une autre action etcc...
+     */
+    const filterReducer = (obs$): Observable<any> => {
+      return obs$.map((state: StateSubjectOptions): any => {
+        // Exemple : quand le filtre à fini d'être exécuter, on tri
+        if (state.end) {
+          this.action[ACTION.order].setForce();
+        } else {
+          if (state.value !== this.filter) {
+            _.merge(this, {filter: state.value}); // clone si object
+            return this.filter;
+          }
+        }
+      });
+    };
+    this.setReducer(filterReducer, ACTION.filter);
+
+    const orderReducer = (obs$): Observable<any> => {
+      return obs$.map((state: StateSubjectOptions): any => {
+        if (state) {
+          if (state.force) {
+            return this.order;
+          }
+
+          if (state.value && state.value !== this.order) {
+            _.merge(this, {order: state.value});
+            return this.order;
+          }
+        }
+      });
+    };
+    this.setReducer(orderReducer, ACTION.order);
+  }
+}
+
+@Component({
+  selector: 'app-root',
+  template: `
+    <button (click)="actionNeedFilter('coucou')">Filter coucou</button>
+    <button (click)="actionNeedFilter('toto')">Filter toto</button>
+    <button (click)="actionNeedOrder('asc')">Order asc</button>
+    <button (click)="actionNeedOrder('dsc')">Order dsc</button>
+    <pre>{{ states.filter }}</pre>
+    <pre>{{ states.order }}</pre>
+  `,
+})
+export class AppComponent {
   states: States;
 
   constructor() {
-    this.states = new States({ init: true, first: 0, rows: 20 });
+    // 3. Initialisatoin des états avec l'enum et les valeurs par défaut
+    this.states = new States(ACTION, {init: true, order: 'asc'});
 
-    /**
-     * L'objet "states" n'ayant pas accès au méhode de filtre, tri etc...
-     *   on souscrira au "trigger" pour trigger les méthodes
-     *   et pour contrôler l'ordre des actions.
-     * Les différents sujets pourrait être assemblé dans un seul sujet
-     */
-
-    // Après filtre, changer tri
-    this.states.triggerFilter.subscribe((f: FilterValues) => {
-      if (!this.isListOfTableEmpty()) {
-        this.filterList(f).subscribe(() => {
-          this.states.orderChange.next({});
-        })
+    // 4. Souscrire au changement d'état
+    this.states.onChangeAction[ACTION.filter].subscribe(filterValue => {
+      if (filterValue) {
+        this.filter(filterValue).subscribe(r => this.states.action[ACTION.filter].end());
+      }
+    });
+    this.states.onChangeAction[ACTION.order].subscribe(orderValue => {
+      if (orderValue) {
+        this.order(orderValue);
       }
     });
 
-    // Après tri, changer "rang"
-    this.states.triggerOrder.subscribe((o: LazyLoadDatatable) => {
-      this.orderList(o).subscribe(() => {
-        this.states.rangeChange.next({});
-      });
-    });
-    
-    this.states.triggerRange.subscribe((r: LazyLoadDatatable) => this.setRange(r));
+    // Init si besoin
+    this.states.action[ACTION.order].setForce();
   }
-  
-  /**
-   * On ne fait que déclanché l'état, 
-   *   pas gestion des états ici mais dans la classe States
-   */
-  autresMethodesQuiAppelLeFiltre(newFilter) {
-    this.states.filterChange.next({global: newFilter});
+
+  actionNeedFilter(val) {
+    // 4. Demande d'exécuation de l'action filtre
+    this.states.action[ACTION.filter].set(val)
+  }
+
+  actionNeedOrder(val) {
+    this.states.action[ACTION.order].set(val)
+  }
+
+  filter(val) {
+    console.log('JE FITRE', val);
+    return Observable.of(val).delay(2000);
+  }
+
+  order(val) {
+    console.log('JE TRI', val);
   }
 }
