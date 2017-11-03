@@ -50,14 +50,4 @@ imports: [ IonicModule.forRoot(AlbumListComponent) ],
 Shared module :
 ---------------
 
-C'est apparement impossible de partager des composants entre module de type page :
-* https://forum.ionicframework.com/t/how-to-correctly-implement-a-components-module-ts-in-ionic/87702/28
-* https://forum.ionicframework.com/t/ionic-3-0-shared-component/91727
-* issue : 
-Imports ComponentsModule in multiple IonicPage like suggested [in the doc](https://docs.google.com/document/d/1vGokwMXPQItZmTHZQbTO4qwj_SQymFhRS_nJmiH0K3w/edit#heading=h.jvfkhk2ogavz)
-...
-Import "shared" module (with components) in IonicPage as in [Angular application](https://angular.io/guide/ngmodule#shared-modules) generate duplicate components code in source
-
-Ioinc recommande de créer un module à la racine : https://docs.google.com/document/d/1vGokwMXPQItZmTHZQbTO4qwj_SQymFhRS_nJmiH0K3w/edit#heading=h.jvfkhk2ogavz
-
-c'est ce que génère la commande ionic generate component question
+C'est apparement impossible de partager des composants entre module de type page : https://github.com/ionic-team/ionic/issues/13328
