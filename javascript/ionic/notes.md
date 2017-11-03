@@ -53,4 +53,4 @@ Shared module :
 C'est apparement impossible de partager des composants entre module de type page :
 * https://forum.ionicframework.com/t/how-to-correctly-implement-a-components-module-ts-in-ionic/87702/28
 * https://forum.ionicframework.com/t/ionic-3-0-shared-component/91727
-* issue : Import "shared" module (with components) in IonicPage as in Angular application generate duplicate components code in source
+* issue : Import "shared" module (with components) in IonicPage as in [Angular application](https://angular.io/guide/ngmodule#shared-modules) generate duplicate components code in source
