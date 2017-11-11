@@ -7,7 +7,15 @@ Apache/PHP :
 
 ### PHP 7 Ubuntu :
 
-Suivre [ce tuto](https://www.howtoforge.com/tutorial/install-apache-with-php-and-mysql-on-ubuntu-16-04-lamp/) (ie: http://locahost au lieu http://192.168.1.100)
+Suivre [ce tuto](https://www.howtoforge.com/tutorial/install-apache-with-php-and-mysql-on-ubuntu-16-04-lamp/), sauf :
+
+* test url http://locahost et non http://192.168.1.100
+* je n'ai pas installé mariadb, ssl
+* avant d'installer php 7
+  * `apt-add-repository ppa:ondrej/php`
+  * `apt-get update`
+* fix pour [connecter à phpmyadmin sans password](https://www.liquidweb.com/kb/error-login-without-a-password-is-forbidden-by-configuration-see-allownopassword-solved/)  
+  
 
 
 Divers :
