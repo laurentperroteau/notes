@@ -14,6 +14,7 @@ Suivre [ce tuto](https://www.howtoforge.com/tutorial/install-apache-with-php-and
 * fix pour [connecter à phpmyadmin sans password](https://www.liquidweb.com/kb/error-login-without-a-password-is-forbidden-by-configuration-see-allownopassword-solved/)  
 * __Attention__ :
   * à ne pas sauter l'étape "9.1 Root access to PHPMyAdmin with MariaDB" (en modifiant le password, en local admin/1234)
+  * les extensions s'installent en faisant un `apt-get install`, c'est tout ! Pas en activant les .dll dans `php.ini` comme sur Windows
   * j'ai accidentelement installer php cli 7.0 et 7.1, le dernier ayant été activé. Pour remettre le 7.0, j'ai supprimer le lien symbolique ` /usr/bin/php` et créer un nouveau qui pointe sur php7.0 `sudo ln -s /usr/bin/php7.0 /usr/bin/php`
 
 Bonus :
