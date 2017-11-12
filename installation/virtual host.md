@@ -36,6 +36,8 @@ Virtual host
 * `mkdir cd ~/www/coucou` (ajouter index.html)
 * `sudo ln -s /home/laurentperroteau/www/coucou /var/www/coucou`
 
+__Attention__ : si on a coché "Encrypt my home folder" lors de l'instalation d'Ubuntu, [changer les droits](https://askubuntu.com/questions/633625/public-folder-in-an-encrypted-home-directory)
+
 ### Appliquer changement :
 
 * `sudo /etc/init.d/apache2 restart`
