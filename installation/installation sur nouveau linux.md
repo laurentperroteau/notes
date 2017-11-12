@@ -17,6 +17,10 @@ Suivre [ce tuto](https://www.howtoforge.com/tutorial/install-apache-with-php-and
 * fix pour [connecter à phpmyadmin sans password](https://www.liquidweb.com/kb/error-login-without-a-password-is-forbidden-by-configuration-see-allownopassword-solved/)  
 * attention à ne pas sauter l'étape "9.1 Root access to PHPMyAdmin with MariaDB" (en modifiant le password, en local admin/1234)
 
+Bonus :
+
+* `sudo apt install composer`
+
   
 
 
