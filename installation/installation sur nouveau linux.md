@@ -22,8 +22,7 @@ Suivre [ce tuto](https://www.howtoforge.com/tutorial/install-apache-with-php-and
 
 Divers :
 --------
-
-* sudo apt-get install mercurial
+* https://github.com/Bash-it/bash-it/wiki/Themes
 * composer : http://www.bravo-kernel.com/2014/08/how-to-install-composer-on-debian/
 * `sudo apt-get install guake`
 * node.js : https://nodejs.org/en/download/package-manager/ 
