@@ -1,11 +1,8 @@
-Apache/PHP :
-------------
+Après installation d'un nouveau Linux :
+=======================================
 
-* `sudo apt-get install apache2-mpm-itk libapache2-mod-php5 php5-cli`
-* `sudo a2enmod rewrite`
-* `sudo php5enmod pdo_mysql`
-
-### PHP 7 Ubuntu :
+PHP 7 Ubuntu :
+--------------
 
 Suivre [ce tuto](https://www.howtoforge.com/tutorial/install-apache-with-php-and-mysql-on-ubuntu-16-04-lamp/), sauf :
 
