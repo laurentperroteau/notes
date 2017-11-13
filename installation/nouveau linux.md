@@ -28,3 +28,4 @@ Divers :
 * composer : http://www.bravo-kernel.com/2014/08/how-to-install-composer-on-debian/
 * `sudo apt-get install guake`
 * node.js : https://nodejs.org/en/download/package-manager/ 
+* [changer background login ubuntu](http://ubuntuhandbook.org/index.php/2017/10/change-login-screen-background-ubuntu-17-10/)
