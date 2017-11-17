@@ -8,7 +8,7 @@ Créer un Pull Request :
 
 1. __Démarrer sur une nouvelle `feature`__ (toujours depuis `develop`) : 
   * ````$ git branch feature/coucou && git checkout feature/coucou````
-2. Pendant le(ce n'est qu'une référence à la branche, si le développement de la `feature` n'est pas fini au prochain "push" la Pull Request sera mis à jour) développement de la `feature` et avant le merge final, __mettre à jour `develop`...__ 
+2. Pendant le développement de la `feature` et avant le merge final, __mettre à jour `develop`...__ 
   * ````$ git checkout develop && git pull````
 3. __... afin que la `feature` soit à jour__ : 
   * ````$ git checkout feature/coucou && git merge develop````
