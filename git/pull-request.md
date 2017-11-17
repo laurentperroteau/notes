@@ -1,7 +1,7 @@
 Pull Request : 
 ==============
 
-> j'ai joins plusieurs commandes GIT via `&&` pour faire plus succinct mais on peut les exécuter une par une
+> j'ai joints plusieurs commandes GIT via `&&` pour faire plus succinct mais on peut les exécuter une par une
 
 Créer un Pull Request :
 -----------------------
@@ -32,7 +32,7 @@ Review une Pull Request :
 Bonus :
 -------
 
-* `$ git checkout -` permet de se positionner sur dernière branche utilisée)
+* `$ git checkout -` permet de se positionner sur la dernière branche utilisée)
 * ajouter des alias :
   * New Branch :
     * `$ git config --global alias.nb "!f() { git branch $1 && git checkout $1; }; f"`
