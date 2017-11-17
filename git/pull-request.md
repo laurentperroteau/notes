@@ -3,20 +3,37 @@ Pull Request :
 
 > j'ai joins plusieurs commandes GIT via `&&` pour faire plus succinct mais on peut les exécuter une par une
 
-#### 1. Démarrer sur une nouvelle `feature` (toujours depuis `develop`) : 
+Créer un Pull Request :
+-----------------------
+
+1. __Démarrer sur une nouvelle `feature`__ (toujours depuis `develop`) : 
   * ````$ git branch feature/coucou && git checkout feature/coucou````
-#### 2. Pendant le développement de la `feature` et avant le merge final, mettre à jour `develop`... 
+2. Pendant le développement de la `feature` et avant le merge final, __mettre à jour `develop`...__ 
   * ````$ git checkout develop && git pull````
-#### 3. ... afin que la `feature` soit à jour : 
+3. __... afin que la `feature` soit à jour__ : 
   * ````$ git checkout feature/coucou && git merge develop````
   * Eviter `-m "msg commit"` après un merge, on perd les commentaires automatique de GIT qui liste des fichiers qui était en conflit
   * C'est le seul moment où il peut y avoir des conflits ! 
-#### 4. Pousser enfin la branche sur le repo distant : 
+4. __Pousser enfin la branche sur le repo distant__ : 
   * ````$ git push origin feature/coucou````. 
   * Dans le message de réponse est précisée une URL pour créer une Merge Request sur GitHub, GitLab ou Bitbucket (ce n'est qu'une référence à la branche, si le développement de la `feature` n'est pas fini au prochain "push" la Pull Request sera mis à jour)
-#### 5. La `feature` peut maintenant être mergé sur `develop` via GitHub, GitLab ou Bitbucket en acceptant le Pull Request
+  
+
+Review une Pull Request :
+-------------------------
+
+1. __Récupérer la Pull Request__ :
+  * ````$ git checkout -b feature/coucou origin/feature/coucou````
+2. __Tester la `feature` en local__
+3. __Review le code__ via GitHub, GitLab ou Bitbucket et ajouter des commentaires si besoin de correction/refactorisation
+  * C'est possible de comparer aussi via l'IDE (sur WebStorm/PhpStorm > Compare with branch > `develop`
+4. Si branche valide, clique sur __"Merge" sur GitHub, GitLab ou Bitbucket__
 
 Bonus :
 -------
 
 * `$ git checkout -` permet de se positionner sur dernière branche utilisée)
+* ajouter des alias :
+  * New Branch :`$ git config --global alias.nb "!f() { git branch $1 && git checkout $1; }; f"`
+  * Checkout Remote Branch : `$ git config --global alias.crb "!f() { git checkout -b $1 origin/$1; }; f"`
+
