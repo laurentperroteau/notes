@@ -26,7 +26,6 @@ Review une Pull Request :
   * ````$ git checkout -b feature/coucou origin/feature/coucou````
 2. __Tester la `feature` en local__
 3. __Review le code__ via GitHub, GitLab ou Bitbucket et ajouter des commentaires si besoin de correction/refactorisation
-  * Il est aussi possible de comparer aussi via l'IDE (sur WebStorm/PhpStorm > Compare with branch > `develop`
 4. Si la branche est valide, cliquer sur __"Merge" sur GitHub, GitLab ou Bitbucket__
 
 Bonus :
@@ -39,4 +38,5 @@ Bonus :
     * => `$ git nb feature/coucou`
   * Checkout Remote Branch : `$ git config --global alias.crb "!f() { git checkout -b $1 origin/$1; }; f"`
     * => `$ git crb feature/coucou`
+* Il est aussi possible de comparer deux branches via l'IDE (sur WebStorm/PhpStorm > Compare with branch > `develop`)
 
