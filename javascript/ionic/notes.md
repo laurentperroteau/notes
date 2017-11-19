@@ -30,7 +30,7 @@ Routing :
   segment: 'path-item-detail/:id' // url ajouter
 })
 ````
-  * les url pour app [via deeplinks](https://ionicframework.com/docs/native/deeplinks/) n'est pas utilisé par défaut (_TODO: tester si en le settant cela remplate les segement des IonicPage_)
+  * les url pour app [via deeplinks](https://ionicframework.com/docs/native/deeplinks/) n'est pas utilisé par défaut (_TODO: tester si en le settant cela remplace les segement des IonicPage_)
 
 Modules :
 ---------
