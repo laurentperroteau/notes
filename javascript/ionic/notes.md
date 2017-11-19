@@ -51,3 +51,10 @@ Shared module :
 ---------------
 
 C'est apparement impossible de partager des composants entre module de type page : https://github.com/ionic-team/ionic/issues/13328
+
+TODO: 
+* inclure shared module in app module
+* ne pas créer le ionic page avec module si ça ne fonctionne pas (c'est à dire, a confirmer, quand on utilise un custom component)
+* voir liées ces 2 issues à celle que j'ai crée :
+  * https://github.com/ionic-team/ionic-app-scripts/issues/
+  * https://github.com/ionic-team/ionic-app-scripts/issues/867
