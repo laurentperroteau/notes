@@ -1,0 +1,17 @@
+// Z-index
+$z-index: (
+  "wls-popup", // 1
+  "wls-l-menu-left", // 2
+  "wls-row-tabs-md-max-buttons", // 11
+  "menu", // 7
+);
+
+// Display z-index of in order of array starting at 5
+@for $i from 1 through length($z-index) {
+
+  $selector: nth($z-index, $i);
+
+  .#{$selector} {
+    z-index: $i + 4;
+  }
+}
