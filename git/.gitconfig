@@ -1,8 +1,11 @@
 [user]
     name = myName
     email = myEmail
-[core]
-    autocrlf = true # besoin si des personnes développent sous Windows
+[core] 
+    # si Unix et si autre dev sous Windows => input
+    # si dev sous windows => true
+    # https://stackoverflow.com/questions/5834014/lf-will-be-replaced-by-crlf-in-git-what-is-that-and-is-it-important
+    autocrlf = input
     editor = nano
 [color]
     ui = true
