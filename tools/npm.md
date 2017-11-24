@@ -26,6 +26,6 @@ A partir de NPM 5, un fichier `package-lock.json` est généré et permet de fig
 Et npm-shrinkwrap.json ? :
 -------------------------
 
-Déjà existant avec NPM 5, il va plus loin en figeant aussi les paquets qui ne sont pas premier niveau (ie: les paquets sont tous installé au premier niveau sauf si 2 paquets utilisent la même dépendance mais avec une version différente).
+Déjà existant avec NPM 5, il va plus loin en figeant aussi les paquets qui ne sont pas au premier niveau (ie: les paquets sont tous installé au premier niveau sauf si 2 paquets utilisent la même dépendance mais avec une version différente).
 
 Là ou le `lock` est obligatoire (toujours généré), le `shrinkwrap` doit être volontairement généré. Si le `lock` est déjà existant : `$ npm shrinkwrap`
