@@ -1,7 +1,7 @@
 Règle d'or du css
 =================
 
-* Utiliser une seule syntaxique : normalemment en utilisant des tirets (pas de camelCase ou snaker_case)
+* Utiliser une seule syntaxe : normalement en utilisant des tirets (pas de camelCase ou snaker_case)
 * Ne pas utiliser les IDs pour styler => les réserver pour le JS et les ancres
 * Préfixer les IDs et class ajouté/modifié en JS => `#jsMenuItem` ou `.jsIsActive`
 * Limiter au possible les descendances. 
