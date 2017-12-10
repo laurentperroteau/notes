@@ -17,6 +17,6 @@ It won't work on some user's machines due to their firewall settings. It simply 
 
 Code protégé :
 
-* pas vraiment : [source](https://github.com/electron/electron/issues/2570)
+* pas vraiment : [source](https://github.com/electron/electron/issues/2570), [source](https://github.com/electron/electron/issues/3041)
 
 
