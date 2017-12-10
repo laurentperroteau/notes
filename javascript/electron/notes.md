@@ -19,4 +19,8 @@ Code protégé :
 
 * pas vraiment : [source](https://github.com/electron/electron/issues/2570), [source](https://github.com/electron/electron/issues/3041)
 
+Packager :
+
+* pour [debian](https://github.com/unindented/electron-installer-debian)
+
 
