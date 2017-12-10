@@ -18,6 +18,9 @@ It won't work on some user's machines due to their firewall settings. It simply 
 Code protégé :
 
 * pas vraiment : [source](https://github.com/electron/electron/issues/2570), [source](https://github.com/electron/electron/issues/3041)
+* pour un package .deb, le code est accessible en dezippant
+* si choix du format asar (créer par electron), les sources ne sont pas accéssible directement mais en installant le package npm "asar", c'est possible
+* TODO: tester sur windows avec un format .exe
 
 Packager :
 
