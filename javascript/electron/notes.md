@@ -1,7 +1,7 @@
 Notes Electron
 ==============
  
- Tuto premier pas en français :
+ Tuto novice (en français !) :
  -----------------------------
  
  * https://zestedesavoir.com/tutoriels/996/vos-applications-avec-electron/
