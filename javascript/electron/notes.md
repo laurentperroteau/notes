@@ -22,7 +22,7 @@ Le code de l'application est-il protégé :
 
 * pas vraiment : [source](https://github.com/electron/electron/issues/2570), [source](https://github.com/electron/electron/issues/3041)
 * pour un package `.deb`, le code est accessible en "dezippant"
-* si choix du format asar (créer par Electron), les sources ne sont pas accéssible directement mais en installant le package npm "asar", c'est possible
+* si choix du format asar (créer par Electron), les sources ne sont pas accéssible directement mais en installant le package npm _[asar](https://www.npmjs.com/package/asar)_, c'est possible
 * __TODO__ : _tester sur windows avec un format .exe et Mac avec un équivalent_
 
 ### Packager :
