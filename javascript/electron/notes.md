@@ -1,10 +1,10 @@
 Notes Electron
 ==============
  
- Tuto novice (en français !) :
- -----------------------------
+ Tuto novice :
+ -------------
  
- * https://zestedesavoir.com/tutoriels/996/vos-applications-avec-electron/
+ * https://zestedesavoir.com/tutoriels/996/vos-applications-avec-electron/ (en français !)
 
 
 Serveur dans electron :
