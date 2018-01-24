@@ -2,7 +2,7 @@
 Animations CSS
 ==============
 
-### Utiliser dans la mesure du possible les propriétés "rendu par le GPU" (carte graphique) :
+#### Utiliser dans la mesure du possible les propriétés "rendu par le GPU" (carte graphique) :
 
 * transform
 * opacity
@@ -11,7 +11,7 @@ Animations CSS
 
 Pourquoi ? [lire cette article](https://www.smashingmagazine.com/2016/12/gpu-animation-doing-it-right/)
 
-### Toujours préciser au navigateur quelle(s) propriété(s) va(vont) changer :
+#### Toujours préciser au navigateur quelle(s) propriété(s) va(vont) changer :
 
 ```
 transition-property: transform;
@@ -25,3 +25,10 @@ will-change: transform;
 ```
 transform: translate3d(0, 0, 0);
 ```
+
+Animations JS
+=============
+
+#### Utiliser `requestAnimationFrame` et jamais  `setInterval` ou `setTimeout`
+
+Pourquoi ? [explications et exemple très parlant](https://stackoverflow.com/questions/38709923/why-is-requestanimationframe-better-than-setinterval-or-settimeout#answer-38709924)
