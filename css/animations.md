@@ -9,7 +9,7 @@ Animations CSS
 * filter
 * NE JAMAIS AU GRAND JAMAIS UTILISER __"ALL"__ (~~transition-property: all~~)
 
-Pourquoi ? [lire cette article](https://www.smashingmagazine.com/2016/12/gpu-animation-doing-it-right/)
+Pourquoi ? [lire cet article](https://www.smashingmagazine.com/2016/12/gpu-animation-doing-it-right/)
 
 #### Toujours préciser au navigateur quelle(s) propriété(s) va(vont) changer :
 
