@@ -15,10 +15,6 @@ Animations CSS ?
 transition-property: transform;
 will-change: transform;
 ```
-```
-transition-property: left, top;
-will-change: left, top;
-```
 
 -------
 
@@ -27,3 +23,5 @@ will-change: left, top;
 ```
 transform: translate3d(0, 0, 0);
 ```
+
+Pourquoi ? [Réponses](https://www.smashingmagazine.com/2016/12/gpu-animation-doing-it-right/)
