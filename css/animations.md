@@ -9,6 +9,8 @@ Animations CSS
 * filter
 * NE JAMAIS AU GRAND JAMAIS UTILISER __"ALL"__ (~~transition-property: all~~)
 
+Pourquoi ? [lire cette article](https://www.smashingmagazine.com/2016/12/gpu-animation-doing-it-right/)
+
 ### Toujours préciser au navigateur quelle(s) propriété(s) va(vont) changer :
 
 ```
@@ -23,5 +25,3 @@ will-change: transform;
 ```
 transform: translate3d(0, 0, 0);
 ```
-
-Pourquoi ? [Réponses](https://www.smashingmagazine.com/2016/12/gpu-animation-doing-it-right/)
