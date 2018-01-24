@@ -1,6 +1,6 @@
 
-Animations CSS ?
-===============
+Animations CSS
+==============
 
 ### Utiliser dans la mesure du possible les propriétés "rendu par le GPU" (carte graphique) :
 
