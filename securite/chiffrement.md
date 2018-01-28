@@ -14,7 +14,7 @@ Symétriques et asymétriques
 
 Exemples : 
 
-* TODO [RSA + AES]](https://medium.com/@weblab_tech/encrypted-client-server-communication-protection-of-privacy-and-integrity-with-aes-and-rsa-in-c7b180fe614e) : très complet client/server (node.js websockets)
+* TODO [RSA + AES](https://medium.com/@weblab_tech/encrypted-client-server-communication-protection-of-privacy-and-integrity-with-aes-and-rsa-in-c7b180fe614e) : très complet client/server (node.js websockets)
 * demo [Web Cryptography](https://github.com/diafygi/webcrypto-examples) (support edge+)
 
 TODO :
