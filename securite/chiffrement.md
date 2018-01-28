@@ -22,3 +22,5 @@ TODO / TO TEST :
 * test http://lollyrock.com/articles/nodejs-encryption/
 * test https://github.com/roryrjb/crypto-json
 * test https://github.com/rzcoder/node-rsa (utiliser dans l'exemple au-dessus, donc tester )
+
+[Rappel Buffer vs Stream in Node.js](https://www.quora.com/What-is-the-difference-between-streams-and-buffers-in-JavaScript-Node-js)
