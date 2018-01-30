@@ -1,9 +1,9 @@
 Hachage
 =======
 
-Créer un hash permet de calculer une "empreinte" d'une donnée ([définition "Fonction de hachage"](https://fr.wikipedia.org/wiki/Fonction_de_hachage)).
+Créer un hash permet de calculer l'"empreinte" d'une donnée ([voir définition de "Fonction de hachage"](https://fr.wikipedia.org/wiki/Fonction_de_hachage)).
 
-"Indécryptable" (ie: ne peut être inversé) mais générant toujours la même empreinte, cela permet de stocker des données sans en connaître le contenu (comme un mot de passe).
+"Indécryptable" (ie: ne peut être inversé) et générant toujours la même empreinte, cela permet de stocker des données sans en connaître le contenu (comme un mot de passe) ou de vérifier l'intégrité d'un message (être sûr qu'il n'a pas été modifié).
 
 Exemple hash : 
 
