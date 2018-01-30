@@ -1,9 +1,6 @@
 Hachage
 =======
 
-Hash :
-------
-
 Créer un hash permet de calculer une "empreinte" d'une donnée ([définition "Fonction de hachage"](https://fr.wikipedia.org/wiki/Fonction_de_hachage)).
 
 "Indécryptable" (ie: ne peut être inversé) mais générant toujours la même empreinte, cela permet de stocker des données sans en connaître le contenu (comme un mot de passe).
