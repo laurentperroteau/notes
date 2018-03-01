@@ -55,7 +55,7 @@ export class StoresService {
     if (queries) storeRequest.queries = queries;
 
     // Get http resquest
-    const httpRequest = this._restStoreService.request(storeRequest);
+    const httpRequest = this._request(storeRequest);
 
     // To manage queue and "retry request" when erros, add "retry" and push it in queue
     if (storeRequest.shouldRetry) {
@@ -67,6 +67,26 @@ export class StoresService {
       return httpRequestInQueue;
     } else {
       return httpRequest;
+    }
+  }
+  
+  _request(request: StoreRequest): Observable<ArrayBuffer> {
+	  let url = environment.server[request.server].url;
+	  const options: any = {};
+
+	  if (request.resource) url += `/api/${request.resource}`;
+    if (request.headers) options.headers = request.headers;
+    if (request.queries) options.params = request.queries;
+
+    switch (request.verb) {
+      case 'POST':
+        return this._http.post(url, request.body, options);
+      case 'PUT':
+        return this._http.put(url, request.body, options);
+      case 'PATCH':
+        return this._http.patch(url, request.body, options);
+      default:
+        return this._http.get(url, options);
     }
   }
 }
