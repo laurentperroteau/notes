@@ -27,9 +27,9 @@ Manipulation fichiers en masse :
 * supprimer tout les fichier ayant l’extension .CR2 : `find . -name '*.CR2' -type f -delete`
 * copier les fichiers ayant un poid supérieur à tant (ex 4.2go) :
   * `$ find . -size +4000M -exec cp -r {} cheminOuCopier/ \;` (se placer dans le dossier qui contient les fichiers à copier)
-* récupérer une liste de fichier d'un dossier et ne copier dans un autre dossier que ces derniers :
-  * `ls > out.txt`
-  * dans le dossier ou copier : `xargs -a list.txt mv -t /path/folder/where/copy`
+* récupérer une liste de fichier : `ls > out.txt`
+* copier une liste de fichiers à partir d'une liste : `xargs -a list.txt mv -t /path/folder/where/copy`
+* supprimer une liste de fichier à partir d'une liste : `$ xargs rm < list.txt`
 
 Divers :
 --------
