@@ -21,8 +21,14 @@ Ouverture GUI depuis terminal :
 * ouvrir fichier: `gnome-open` dans programe
 * ouvrir dossier dans fenêtre: `xdg-open`
 
-Manipulation fichiers en masse :
+Manipulation fichiers :
 --------------------------------
+
+* accès disque externe : `cd /media/laurentperroteau/My Book/`
+* trouver le fichier le plus récent : `ls -Art | tail -n 1`
+* trouver le plus vieux fichier : `find -type f -printf '%T+ %p\n' | sort | head -n 1`
+
+### Manipulation fichiers en masse :
 
 * supprimer tout les fichier ayant l’extension .CR2 : `find . -name '*.CR2' -type f -delete`
 * copier les fichiers ayant un poid supérieur à tant (ex 4.2go) :
@@ -30,6 +36,7 @@ Manipulation fichiers en masse :
 * récupérer une liste de fichier : `ls > out.txt`
 * copier une liste de fichiers à partir d'une liste : `xargs -a list.txt mv -t /path/folder/where/copy`
 * supprimer une liste de fichier à partir d'une liste : `$ xargs rm < list.txt`
+* copier tous les fichier modifié les 60 dernièrs jours : `find . -mtime -60 -print0 | cpio -0mdp ../dossier_destination
 
 Divers :
 --------
