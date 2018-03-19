@@ -1,7 +1,7 @@
 Pull Request : 
 ==============
 
-> j'ai joints plusieurs commandes GIT via `&&` pour faire plus succinct mais on peut les exécuter une par une
+> j'ai joint les commandes GIT via `&&` pour faire plus succinct mais on peut les exécuter une par une
 
 Créer un Pull Request :
 -----------------------
@@ -13,7 +13,6 @@ Créer un Pull Request :
 3. __... afin que la `feature` soit à jour__ : 
   * ````$ git checkout feature/coucou && git rebase develop````
   * Avec ce Workflow, c'est le seul moment où il peut y avoir des conflits ! 
-  * Eviter `-m "msg commit"` après un merge, on perd les commentaires automatique de GIT qui liste des fichiers qui était en conflit
 4. __Pousser enfin la branche sur le repo distant__ : 
   * ````$ git push origin feature/coucou````
   * Dans le message de réponse est précisée une URL pour créer une Merge Request sur GitHub, GitLab ou Bitbucket
