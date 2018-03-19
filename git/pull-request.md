@@ -11,12 +11,16 @@ Créer un Pull Request :
 2. Pendant le développement de la `feature` et avant le merge final, __mettre à jour `develop`...__ 
   * ````$ git checkout develop && git pull````
 3. __... afin que la `feature` soit à jour__ : 
-  * ````$ git checkout feature/coucou && git merge develop````
+  * ````$ git checkout feature/coucou && git rebase develop````
   * Avec ce Workflow, c'est le seul moment où il peut y avoir des conflits ! 
   * Eviter `-m "msg commit"` après un merge, on perd les commentaires automatique de GIT qui liste des fichiers qui était en conflit
 4. __Pousser enfin la branche sur le repo distant__ : 
-  * ````$ git push origin feature/coucou````. 
+  * ````$ git push origin feature/coucou````
   * Dans le message de réponse est précisée une URL pour créer une Merge Request sur GitHub, GitLab ou Bitbucket
+  
+ __ATTENTION Rebase__ :
+ * si plusieurs personnes travaille sur la même feature, faire un `merge` à la place du `rebase`
+ * utiliser `--force` si la branche de type feature à déjà été poussé sur le répo distant (toujours à condition d'être seul a travailler sur cette branche)
   
 
 Review une Pull Request :
