@@ -34,7 +34,7 @@ Review une Pull Request :
 Bonus :
 -------
 
-* `$ git checkout -` permet de se positionner sur la dernière branche utilisée)
+* `$ git checkout -` permet de se positionner sur la dernière branche utilisée
 * ajouter des alias :
   * New Branch :
     * `$ git config --global alias.nb "!f() { git branch $1 && git checkout $1; }; f"`
