@@ -19,8 +19,8 @@ Créer un Pull Request :
   * Dans le message de réponse est précisée une URL pour créer une Merge Request sur GitHub, GitLab ou Bitbucket
   
  __ATTENTION Rebase__ :
- * si plusieurs personnes travaille sur la même feature, faire un `merge` à la place du `rebase`
- * utiliser `--force` si la branche de type feature à déjà été poussé sur le répo distant (toujours à condition d'être seul a travailler sur cette branche)
+ * si plusieurs personnes travaillent sur la même feature, faire un `merge` à la place du `rebase`
+ * utiliser `--force` si la branche de type feature a déjà été poussé sur le répo distant (toujours à condition d'être seul à travailler sur cette branche)
   
 
 Review une Pull Request :
