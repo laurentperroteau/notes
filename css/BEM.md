@@ -40,7 +40,7 @@ Listes problèmes CSS résolu via BEM :
 La liste (issu de la [présentation "CSS in JS"](https://speakerdeck.com/vjeux/react-css-in-js)) :
 
 1. Global namespace : oui
-2. Dependencies : non, tout les styles qui peuvent être global sont chargé
+2. Dependencies : non, tous les styles qui peuvent être global sont chargé
 3. Dead code elimination : non, besoin de Webpack/JS composant
 4. Minification : non
 5. Sharing constants : CSS dans JS pour ce cas
