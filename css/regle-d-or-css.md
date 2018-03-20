@@ -3,12 +3,12 @@ Règle d'or du css
 
 * Utiliser une seule syntaxe : normalement en utilisant des tirets (pas de camelCase ou snaker_case)
 * Ne pas utiliser les IDs pour styler => les réserver pour le JS et les ancres
-* Préfixer les IDs et class ajouté/modifié en JS => `#jsMenuItem` ou `.jsIsActive`
+* Préfixer les IDs et classes ajouté/modifié en JS => `#jsMenuItem` ou `.jsIsActive`
 * Limiter au possible les descendances. 
   * Mauvais exemple : `.content .primary ul > li .link-red {}`
 * N'utiliser que les classes pour styler : 
   * Pas de `button {}`, de `div.toto li {}`, ni de `[data-toto=true] {}`
-* Ne pas utiliser pas les tags de texte (`p`, `span`, `strong` etc...) pour autre chose
+* Ne pas utiliser les tags de texte (`p`, `span`, `strong` etc...) pour autre chose
 * Ne pas cumuler plus de 2 sélecteurs, créé une classe générique à la place
 * Le sens du sélecteur dont avoir un rapport avec les styles qu'ils contiennent : 
   * une classe avec un nom de couleur ne doit contenir que des couleurs, pas des tailles... et inversement
