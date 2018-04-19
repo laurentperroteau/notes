@@ -1,9 +1,9 @@
-Règle d'or du css
+Règles d'or du css
 =================
 
 * Utiliser une seule syntaxe : normalement en utilisant des tirets (pas de camelCase ou snaker_case)
 * Ne pas utiliser les IDs pour styler => les réserver pour le JS et les ancres
-* Préfixer les IDs et classes ajouté/modifié en JS => `#jsMenuItem` ou `.jsIsActive`
+* Préfixer les IDs et classes ajoutées/modifiées en JS => `#jsMenuItem` ou `.jsIsActive`
 * Limiter au possible les descendances. 
   * Mauvais exemple : `.content .primary ul > li .link-red {}`
 * N'utiliser que les classes pour styler : 
