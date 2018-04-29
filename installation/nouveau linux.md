@@ -33,3 +33,7 @@ Divers :
 * `sudo apt-get install guake`
 * node.js : https://nodejs.org/en/download/package-manager/ 
 * [changer background login ubuntu](http://ubuntuhandbook.org/index.php/2017/10/change-login-screen-background-ubuntu-17-10/)
+
+Problèmes :
+-----------
+* plex external drive: https://askubuntu.com/questions/395291/plex-media-server-wont-find-media-external-hard-drive
