@@ -27,7 +27,8 @@ Bonus :
 
 Divers :
 --------
-* https://github.com/Bash-it/bash-it/wiki/Themes => bakke
+* Numix : http://omgfoss.com/install-numix-theme-icons-ubuntu-18-04/
+* Bbakke: https://github.com/Bash-it/bash-it/wiki/Themes => 
 * composer : http://www.bravo-kernel.com/2014/08/how-to-install-composer-on-debian/
 * `sudo apt-get install guake`
 * node.js : https://nodejs.org/en/download/package-manager/ 
