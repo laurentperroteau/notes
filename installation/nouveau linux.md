@@ -7,7 +7,8 @@ PHP 7 Ubuntu :
 Suivre [ce tuto](https://www.howtoforge.com/tutorial/install-apache-with-php-and-mysql-on-ubuntu-18-04-lamp/), sauf :
 
 * test url http://locahost et non http://192.168.1.100
-* je n'ai pas installé mariadb, ssl
+* je n'ai pas installé ssl
+* problème mysql root accès : https://stackoverflow.com/questions/39281594/error-1698-28000-access-denied-for-user-rootlocalhost
 * avant d'installer php 7
   * `apt-add-repository ppa:ondrej/php`
   * `apt-get update`
