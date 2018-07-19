@@ -4,7 +4,7 @@ Après installation d'un nouveau Linux :
 PHP 7 Ubuntu :
 --------------
 
-Suivre [ce tuto](https://www.howtoforge.com/tutorial/install-apache-with-php-and-mysql-on-ubuntu-16-04-lamp/), sauf :
+Suivre [ce tuto](https://www.howtoforge.com/tutorial/install-apache-with-php-and-mysql-on-ubuntu-18-04-lamp/), sauf :
 
 * test url http://locahost et non http://192.168.1.100
 * je n'ai pas installé mariadb, ssl
