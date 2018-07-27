@@ -1,6 +1,11 @@
 Promises
 ========
 
+TODO : 
+* exemple simple de promise
+* gestion des erreurs/catch : https://jsfiddle.net/qdjkreo5/3242/
+
+
 Enchaînement de promises :
 --------------------------
 
