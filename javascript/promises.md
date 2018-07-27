@@ -4,7 +4,7 @@ Promises
 Enchaînement de promises :
 --------------------------
 
-Promises redondantes (anti-pattern) : 
+Solution qui fonctionne mais promises redondantes (anti-pattern) : 
 
 ````js
 return new Promise((resolve, reject) => {
@@ -20,18 +20,18 @@ return new Promise((resolve, reject) => {
 });
 ````
 
-Solutions : 
+Solution : 
 
 ````js
 return serviceCallApi
-	.then(res => {
-		res.coucou = 'test';
-		return res; // return === resolve
-	})
-	.catch(e => {
-		console.error('Error in bla bla', e);
-		throw e; // throw === reject (attention, pas de return)
-	});
+  .then(res => {
+    res.coucou = 'test';
+    return res; // return === resolve
+  })
+  .catch(e => {
+    console.error('Error in bla bla', e);
+    throw e; // throw === reject (attention, pas de return)
+  });
 ````
 
 Promise vs async/await :
