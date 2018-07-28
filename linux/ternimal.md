@@ -36,7 +36,7 @@ Manipulation fichiers :
 * récupérer une liste de fichier : `ls > out.txt`
 * copier une liste de fichiers à partir d'une liste : `xargs -a list.txt mv -t /path/folder/where/copy`
 * supprimer une liste de fichier à partir d'une liste : `$ xargs rm < list.txt`
-* copier tous les fichier modifié les 60 dernièrs jours : `find . -mtime -60 -print0 | cpio -0mdp ../dossier_destination
+* copier tous les fichier modifié les 60 dernièrs jours : `find . -mtime -60 -print0 | cpio -0mdp ../dossier_destination`
 
 Divers :
 --------
