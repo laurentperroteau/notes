@@ -13,7 +13,7 @@ Droîts :
 * chmod récursif sur les répertoires uniquement : `find . -type d -exec chmod 755 {} \;`
 * même chose pour les fichiers: `find . -type f -exec chmod 644 {} \;`
 * changer user : `sudo chown -R nouveau_user nom_repertoire`
-* changer groupe dossier (sans le R pour un fichier) : sudo chown laurent:laurent -R nouveau_repertoire
+* changer groupe dossier (sans le R pour un fichier) : `sudo chown laurent:laurent -R nouveau_repertoire`
 
 Ouverture GUI depuis terminal :
 -------------------------------
