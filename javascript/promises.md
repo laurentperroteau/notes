@@ -36,6 +36,8 @@ Règles d'or :
 1. Toujours catcher une erreur depuis le `onrejected` de `catch` et non celui de `then` (voir le mauvais exemple n°1)
 2. A l'intérieur d'une promise, toujours utiliser `return` et `throw` (qui stop l'exécution) et non `resolve` et `reject` (voir le mauvais exemple n°2)
 
+> [jsFiddle](https://jsfiddle.net/laurentperroteau/xhra58vf/26/) pour tester ces exemples
+
 Mauvais exemples :
 ------------------
 
