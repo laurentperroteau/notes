@@ -1,6 +1,20 @@
 Promises
 ========
 
+### Exemple
+
+````js
+return serviceCallApi
+  .then(res => {
+    res.coucou = 'test';
+    return res; // like 'resolve' but stoping execution
+  })
+  .catch(e => {
+    console.error('Error in bla bla', e);
+    throw e; // like 'reject' but stoping execution (don't use 'return', so don't do that 'catch(e => throw e)')
+  });
+````
+
 ### Interface d'une promise
 
 ```ts
@@ -15,20 +29,6 @@ interface Promise<T> {
   ): Promise<T>;
 }
 ```
-
-### Exemple
-
-````js
-return serviceCallApi
-  .then(res => {
-    res.coucou = 'test';
-    return res; // return === resolve
-  })
-  .catch(e => {
-    console.error('Error in bla bla', e);
-    throw e; // throw === reject (attention, pas de return, donc pas catch(e => throw e))
-  });
-````
 
 Règles d'or :
 -------------
