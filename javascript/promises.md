@@ -61,7 +61,7 @@ return new Promise((resolve, reject) => {
     .then(() => {
       console.log('level 1 success');
 
-      resolvedPromise() // same problem rejectedPromise()
+      resolvedPromise() // same problem a rejected promise
         .then(() => {
           console.log('level 2 success');
           throw 'undexpected error'; 
@@ -82,7 +82,7 @@ return new Promise((resolve, reject) => {
 Bonne exemple complet :
 -----------------------
 
-````js
+````js callback not trigger
 function level1Revolved() {
   return resolvedPromise()
     .then(() => {
