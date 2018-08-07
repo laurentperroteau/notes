@@ -93,10 +93,7 @@ function level1Revolved() {
       console.log('level 1 success'); // 1
       return 'ok 1';
     })
-    .catch(error => {
-      console.log('level 1 error');
-      throw error;
-    });
+    /* .catch(error => { throw error; })*/; // unuseful if only 'throw error'
 }
 
 function level2Rejected() {
@@ -107,7 +104,7 @@ function level2Rejected() {
       return 'ok 1';
     })
     .catch(error => {
-      console.log('level 2 error'); // 4
+      console.log('level 2 error'); // 4 
       throw error;
     });
 }
