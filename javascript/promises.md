@@ -145,7 +145,7 @@ async callAPI(result) {
     await http.get();
   } catch (e) {
     console.error(e);
-    return; // sinon continue
+    return; // required
   }
 
   this.doSomethingOnSuccess();
