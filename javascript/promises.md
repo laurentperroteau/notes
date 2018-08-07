@@ -35,7 +35,7 @@ return serviceCallApi
   })
   .catch(e => {
     console.error('Error in bla bla', e);
-    throw e; // throw === reject (attention, pas de return)
+    throw e; // throw === reject (attention, pas de return, donc pas catch(e => throw e))
   });
 ````
 
