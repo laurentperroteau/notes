@@ -11,7 +11,7 @@ return serviceCallApi
   })
   .catch(e => {
     console.error('Error in bla bla', e);
-    throw e; // like 'reject' but stoping execution (don't use 'return', so don't do that 'catch(e => throw e)')
+    throw e; // like 'reject' (don't use 'return', so don't do that 'catch(e => throw e)')
   });
 ````
 
@@ -34,7 +34,7 @@ Règles d'or :
 -------------
 
 1. Toujours catcher une erreur depuis le `onrejected` de `catch` et non celui de `then` (voir le mauvais exemple n°1)
-2. A l'intérieur d'une promise, toujours utiliser `return` et `throw` (qui stop pas l'exécution) et non `resolve` et `reject` (voir le mauvais exemple n°2)
+2. A l'intérieur d'une promise, toujours utiliser `return` et `throw` (qui stop l'exécution) et non `resolve` et `reject` (voir le mauvais exemple n°2)
 
 Mauvais exemples :
 ------------------
@@ -45,9 +45,9 @@ Mauvais exemples :
 return resolvedPromise()
   .then(() => {
     console.log('success');
-    throw 'undexpected error';
+    throw 'undexpected error'; // => generate fatal error because is not catched 
     return 'ok';
-  }, error => { //  => onrejected callback not trigger 
+  }, error => { // => onrejected callback not trigger 
     console.log('error');
     throw error;
   });
