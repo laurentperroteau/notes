@@ -19,7 +19,7 @@ interface Promise<T> {
 Conslusions :
 -------------
 
-1. Toujours catcher une erreur depuis le `onrejected` de `catch` et non lieu du deuxième callback de `then`, pourquoi :
+1. Toujours catcher une erreur depuis le `onrejected` de `catch` et non celui de `then`, pourquoi :
   1 Parce que TODO
 2. Indenter des promises ...
 1. `resolve` et `reject` ne stop pas l'exécution (contairement à `return` et `throw`), ce qui
