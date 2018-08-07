@@ -16,33 +16,7 @@ interface Promise<T> {
 }
 ```
 
-Conslusions :
--------------
-
-1. Toujours catcher une erreur depuis le `onrejected` de `catch` et non celui de `then` (voir le mauvais exemple n°1)
-2. A l'intérieur d'un promise, toujours utiliser `return` et `throw` (qui stop pas l'exécution) et non `resolve` et `reject` (voir le mauvais exemple n°1)
-
-
-Enchaînement de promises :
---------------------------
-
-Solution qui fonctionne mais promises redondantes (anti-pattern) : 
-
-````js
-return new Promise((resolve, reject) => {
-  serviceCallApi
-    .then(res => {
-      res.coucou = 'test';
-      resolve(res);
-    })
-    .catch(e => {
-      console.error('Error in bla bla', e);
-      reject(e);
-    });
-});
-````
-
-Solution : 
+### Exemple
 
 ````js
 return serviceCallApi
@@ -56,6 +30,11 @@ return serviceCallApi
   });
 ````
 
+Règles d'or :
+-------------
+
+1. Toujours catcher une erreur depuis le `onrejected` de `catch` et non celui de `then` (voir le mauvais exemple n°1)
+2. A l'intérieur d'une promise, toujours utiliser `return` et `throw` (qui stop pas l'exécution) et non `resolve` et `reject` (voir le mauvais exemple n°2)
 
 Mauvais exemples :
 ------------------
