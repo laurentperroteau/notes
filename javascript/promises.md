@@ -1,7 +1,7 @@
 Promises
 ========
 
-### Interface d'un promise
+### Interface d'une promise
 
 ```ts
 interface Promise<T> {
