@@ -19,14 +19,8 @@ interface Promise<T> {
 Conslusions :
 -------------
 
-1. Toujours catcher une erreur depuis le `onrejected` de `catch` et non celui de `then`, pourquoi :
-  1 Parce que TODO
-2. Indenter des promises ...
-1. `resolve` et `reject` ne stop pas l'exécution (contairement à `return` et `throw`), ce qui
-
-TODO : 
-* exemple simple de promise
-* gestion des erreurs/catch : https://jsfiddle.net/qdjkreo5/3242/
+1. Toujours catcher une erreur depuis le `onrejected` de `catch` et non celui de `then` (voir le mauvais exemple n°1)
+2. A l'intérieur d'un promise, toujours utiliser `return` et `throw` (qui stop pas l'exécution) et non `resolve` et `reject` (voir le mauvais exemple n°1)
 
 
 Enchaînement de promises :
@@ -59,6 +53,99 @@ return serviceCallApi
   .catch(e => {
     console.error('Error in bla bla', e);
     throw e; // throw === reject (attention, pas de return, donc pas catch(e => throw e))
+  });
+````
+
+
+Mauvais exemples :
+------------------
+
+### N°1 : ne pas utiliser le callback `onrejected` de `then`
+
+````js
+return resolvedPromise()
+  .then(() => {
+    console.log('success');
+    throw 'undexpected error';
+    return 'ok';
+  }, error => { //  => onrejected callback not trigger 
+    console.log('error');
+    throw error;
+  });
+````
+
+### N°2 : ne pas utiliser `resolve` et `reject` à l'intérieur d'une autre promise
+
+````js
+return new Promise((resolve, reject) => {
+  resolvedPromise()
+    .then(() => {
+      console.log('level 1 success');
+
+      resolvedPromise() // same problem rejectedPromise()
+        .then(() => {
+          console.log('level 2 success');
+          throw 'undexpected error'; 
+        })
+        .catch(error => { // => trigger
+          console.log('level 2 error');
+          reject(error);
+        });
+    })
+    .catch(error => { // => not trigger
+      console.log('level 1 error');
+      reject(error);
+    });
+});
+````
+
+
+Bonne exemple complet :
+-----------------------
+
+````js
+function level1Revolved() {
+  return resolvedPromise()
+    .then(() => {
+      console.log('level 1 success'); // 1
+      return 'ok 1';
+    })
+    .catch(error => {
+      console.log('level 1 error');
+      throw error;
+    });
+}
+
+function level2Rejected() {
+  return rejectedPromise()
+    .then(() => {
+      console.log('level 2 success'); // 3
+      throw 'undexpected error';
+      return 'ok 1';
+    })
+    .catch(error => {
+      console.log('level 2 error'); // 4
+      throw error;
+    });
+}
+
+return level1()
+  .then(() => {
+    console.log('parent level 1 success'); // 2
+
+    return level2()
+      .then(() => {
+        console.log('parent level 2 success');
+        return 'ok parent';
+      })
+      .catch(error => {
+        console.log('parent level 2 error');  // 5
+        throw error;
+      });
+  })
+  .catch(error => {
+    console.log('parent level 1 error');  // 6
+    throw error;
   });
 ````
 
