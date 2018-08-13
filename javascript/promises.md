@@ -63,7 +63,7 @@ return new Promise((resolve, reject) => {
     .then(() => {
       console.log('level 1 success');
 
-      resolvedPromise() // same problem a rejected promise
+      resolvedPromise() // same problem with a rejected promise
         .then(() => {
           console.log('level 2 success');
           throw 'undexpected error'; 
