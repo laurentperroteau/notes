@@ -47,7 +47,7 @@ Mauvais exemples :
 return resolvedPromise()
   .then(() => {
     console.log('success');
-    throw 'undexpected error'; // => generate fatal error because is not catched 
+    throw 'unexpected error'; // => generate fatal error because is not catched 
     return 'ok';
   }, error => { // => onrejected callback not trigger 
     console.log('error');
@@ -66,7 +66,7 @@ return new Promise((resolve, reject) => {
       resolvedPromise() // same problem with a rejected promise
         .then(() => {
           console.log('level 2 success');
-          throw 'undexpected error'; 
+          throw 'unexpected error'; 
         })
         .catch(error => { // => trigger
           console.log('level 2 error');
@@ -100,7 +100,7 @@ function level2Rejected() {
   return rejectedPromise()
     .then(() => {
       console.log('level 2 success'); // 3
-      throw 'undexpected error';
+      throw 'unexpected error';
       return 'ok 1';
     })
     .catch(error => {
