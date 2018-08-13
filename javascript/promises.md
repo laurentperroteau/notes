@@ -114,7 +114,7 @@ return level1Revolved()
     console.log('parent level 1 success'); // 2
 
     return level2Rejected()
-      .then(() => {
+      .then(() => { // don't trigger this "onfulfilled'
         console.log('parent level 2 success');
         return 'ok parent';
       })
