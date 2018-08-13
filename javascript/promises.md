@@ -11,7 +11,7 @@ return serviceCallApi
   })
   .catch(e => {
     console.error('Error in bla bla', e);
-    throw e; // like 'reject' (don't use 'return', so don't do that 'catch(e => throw e)')
+    throw e; // like 'reject' (don't use 'return', so don't do that => 'catch(e => throw e)')
   });
 ````
 
