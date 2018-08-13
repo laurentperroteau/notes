@@ -100,7 +100,7 @@ function level2Rejected() {
   return rejectedPromise()
     .then(() => {
       console.log('level 2 success'); // 3
-      throw 'unexpected error';
+      throw 'unexpected error'; // jump to catch
       return 'ok 1';
     })
     .catch(error => {
