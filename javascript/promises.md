@@ -109,11 +109,11 @@ function level2Rejected() {
     });
 }
 
-return level1()
+return level1Revolved()
   .then(() => {
     console.log('parent level 1 success'); // 2
 
-    return level2()
+    return level2Rejected()
       .then(() => {
         console.log('parent level 2 success');
         return 'ok parent';
@@ -135,9 +135,7 @@ Promise vs async/await :
 ````js
 callAPI(result) {
   http.get()
-    .then(__ => {
-      this.doSomethingOnSuccess();
-    })
+    .then(__ => this.doSomethingOnSuccess())
     .catch(e => console.log(e));
 }
 
