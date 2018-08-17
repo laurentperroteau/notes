@@ -1,0 +1,6 @@
+Angular bundle stats
+====================
+
+* ng build --stats-json
+* voir totaux sur ce site : https://webpack.github.io/analyse/
+* npx webpack-bundle-analyzer dist/stats.json
