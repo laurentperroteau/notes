@@ -34,6 +34,7 @@ Divers :
 * `sudo apt-get install guake`
 * node.js : https://nodejs.org/en/download/package-manager/ 
 * [changer background login ubuntu](http://ubuntuhandbook.org/index.php/2017/10/change-login-screen-background-ubuntu-17-10/)
+* logiciel photo : https://doc.ubuntu-fr.org/gthumb
 
 Problèmes :
 -----------
