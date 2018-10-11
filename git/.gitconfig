@@ -33,7 +33,7 @@
     col = checkout - # checkout last branch
     nb = "!f() { git branch $1 && git checkout $1; }; f"
 	crb = "!f() { git checkout -b $1 origin/$1; }; f"
-    up = pull
+    up = pull origin HEAD 
     p = push
     pf = push -f
     lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %Cblue<%an>%Creset' --abbrev-commit --date=relative --all
