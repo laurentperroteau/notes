@@ -37,12 +37,11 @@ Divers :
 * logiciel photo : https://doc.ubuntu-fr.org/gthumb
 * alt+tab: https://askubuntu.com/questions/1036248/how-to-separate-opened-windows-in-alttab-switcher-in-ubuntu-18-04
 * Alias bash :
-  * dans ~/.bash_profile
+  * dans ~/.bashrc
 ````
 # Alias maison
 alias g="git"
 alias n="npm"
-# Reload .bash : `$ source ~/.bash_profile`
 ````
 
 Problèmes :
