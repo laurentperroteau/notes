@@ -1,6 +1,16 @@
 Compartif Angular/React : 
 =========================
 
+TODO :
+------
+
+* Mon opinion ne concerne les cas suivant :
+  - utilisation a la jquery
+  - indexation / rendu serveur
+  - grosse app
+* Mes seulement :
+  - BO et jeux qui consomme des apis headless
+
 > déjà, Angular ou React mais toujours avec Typescript :)
 
 * __Jeu et app avec beaucoup d'intéraction UI__ (et peu de persistance de data) => _React_ car incite/facilite la création de petit composant
