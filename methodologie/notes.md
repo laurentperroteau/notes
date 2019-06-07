@@ -80,3 +80,4 @@ Todo :
 Parler des problèmes :
 - Philippe wls rhbo prod : firebase permet de voir dernière mise en prod, le tag aussi... 
 - on doit savoir, même pour un projet pas entretenu tous les jours a que état - commit il est
+- gameserver debug en prod
