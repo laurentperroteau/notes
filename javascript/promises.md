@@ -192,7 +192,7 @@ __Avantages__
 async function level2Rejected() {
   const [ error, result ] = await to(rejectedPromise());
   if (error) {
-  	console.log('level 2 error'); // 3 
+    console.log('level 2 error'); // 3 
     throw error;
   }
   
