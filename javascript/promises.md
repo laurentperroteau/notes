@@ -83,10 +83,10 @@ return new Promise((resolve, reject) => {
 Exception : besoin de `resolve` dans le `catch`
 
 
-Bonne exemple complet :
------------------------
+Correction complète :
+---------------------
 
-````js callback not trigger
+````js
 function level1Revolved() {
   return resolvedPromise()
     .then(() => {
@@ -129,24 +129,48 @@ return level1Revolved()
   });
 ````
 
-Promise vs async/await :
-------------------------
+Correction version async/await :
+--------------------------------
+
+__Avantages__
+
+1. 
 
 ````js
-callAPI(result) {
-  http.get()
-    .then(__ => this.doSomethingOnSuccess())
-    .catch(e => console.log(e));
+async function level1Revolved() {
+  await resolvedPromise();
+  console.log('level 1 success'); // 1
+  return 'ok 1';
 }
 
-async callAPI(result) {
+async function level2Rejected() {
   try {
-    await http.get();
-  } catch (e) {
-    console.error(e);
-    return; // required
+    await rejectedPromise();
+    console.log('level 2 success'); // 3
+    throw 'unexpected error'; // jump to catch
+    return 'ok 1';
+  } catch(error) {
+    console.log('level 2 error'); // 4 
+    throw error;
   }
+}
 
-  this.doSomethingOnSuccess();
+async function test() {
+	try {
+		await level1Revolved();
+  	console.log('parent level 1 success'); // 2
+    
+    try {
+    	await level2Rejected();
+      console.log('parent level 2 success');
+      return 'ok parent';
+    } catch(error) {
+      console.log('parent level 2 error');  // 5
+      throw error;
+    }
+  } catch(error) {
+    console.log('parent level 1 error');  // 6
+    throw error;
+  }
 }
 ````
