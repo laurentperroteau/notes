@@ -190,7 +190,7 @@ __Avantages__
 ...
 
 async function level2Rejected() {
-	const [ error, result ] = await to(rejectedPromise());
+  const [ error, result ] = await to(rejectedPromise());
   if (error) {
   	console.log('level 2 error'); // 3 
     throw error;
@@ -201,16 +201,16 @@ async function level2Rejected() {
 }
 
 async function test() {
-	const [ error1, result1 ] = await to(level1Revolved());
-	if (error1) {
-  	console.log('parent level 1 error');  // 5
+  const [ error1, result1 ] = await to(level1Revolved());
+  if (error1) {
+    console.log('parent level 1 error');  // 5
     throw error1;
   }
   console.log('parent level 1 success'); // 2
   
   const [ error2, result2 ] = await to(level2Rejected(/*result1*/));
   if (!error2) {
-  	console.log('parent level 2 error');  // 4
+    console.log('parent level 2 error');  // 4
     throw error2;
   } 
   
