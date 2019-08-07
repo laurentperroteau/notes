@@ -89,43 +89,42 @@ Correction complète :
 ````js
 function level1Revolved() {
   return resolvedPromise()
-    .then(() => {
+    .then(result => {
       console.log('level 1 success'); // 1
-      return 'ok 1';
+      return result;
     })
     /* .catch(error => { throw error; })*/; // unuseful if only 'throw error'
 }
 
 function level2Rejected() {
   return rejectedPromise()
-    .then(() => {
-      console.log('level 2 success'); // 3
-      throw 'unexpected error'; // jump to catch
-      return 'ok 1';
+    .then(result => { // jump to catch
+      console.log('level 2 success');
+      return result;
     })
     .catch(error => {
-      console.log('level 2 error'); // 4 
+      console.log('level 2 error'); // 3
       throw error;
     });
 }
 
 function test() {
   return level1Revolved()
-    .then(() => {
+    .then(result1 => {
       console.log('parent level 1 success'); // 2
 
-      return level2Rejected()
-        .then(() => { // don't trigger this "onfulfilled'
+      return level2Rejected(/*result1*/)
+        .then((result2 => { // don't trigger this "onfulfilled'
           console.log('parent level 2 success');
-          return 'ok parent';
+          return result2;
         })
         .catch(error => {
-          console.log('parent level 2 error');  // 5
+          console.log('parent level 2 error');  // 4
           throw error;
         });
     })
     .catch(error => {
-      console.log('parent level 1 error');  // 6
+      console.log('parent level 1 error');  // 5
       throw error;
     });
 }
@@ -137,44 +136,84 @@ Correction version async/await :
 __Avantages__
 
 1. Moins d'indentation
-2. Economie de 12 lignes
+2. Economie de lignes (12% ici)
 3. Pas de confusions avec les `onrejected`, `reject`, `return` and `throw`
 
 ````js
 async function level1Revolved() {
-  await resolvedPromise();
+  const result = await resolvedPromise();
   console.log('level 1 success'); // 1
-  return 'ok 1';
+  return result;
 }
 
 async function level2Rejected() {
   try {
-    await rejectedPromise();
-    console.log('level 2 success'); // 3
-    throw 'unexpected error'; // jump to catch
-    return 'ok 1';
+    const result = await rejectedPromise(); // jump to catch
+    console.log('level 2 success');
+    return result;
   } catch(error) {
-    console.log('level 2 error'); // 4 
+    console.log('level 2 error'); // 3 
     throw error;
   }
 }
 
 async function test() {
   try {
-    await level1Revolved();
+    const result1 = await level1Revolved();
     console.log('parent level 1 success'); // 2
 
     try {
-      await level2Rejected();
+      const result2 = await level2Rejected(/*result1*/);
       console.log('parent level 2 success');
-      return 'ok parent';
+      return result2;
     } catch(error) {
-      console.log('parent level 2 error');  // 5
+      console.log('parent level 2 error');  // 4
       throw error;
     }
   } catch(error) {
-    console.log('parent level 1 error');  // 6
+    console.log('parent level 1 error');  // 5
     throw error;
   }
+}
+````
+
+Correction version [await-to-js](https://www.npmjs.com/package/await-to-js) :
+--------------------------------
+
+__Avantages__
+
+1. Moins d'indentation
+2. Economie de lignes (12% ici)
+3. Pas de confusions avec les `onrejected`, `reject`, `return` and `throw`
+
+````js
+...
+
+async function level2Rejected() {
+	const [ error, result ] = await to(rejectedPromise());
+  if (error) {
+  	console.log('level 2 error'); // 3 
+    throw error;
+  }
+  
+  console.log('level 2 success');
+  return result;
+}
+
+async function test() {
+	const [ error1, result1 ] = await to(level1Revolved());
+	if (error1) {
+  	console.log('parent level 1 error');  // 5
+    throw error1;
+  }
+  console.log('parent level 1 success'); // 2
+  
+  const [ error2, result2 ] = await to(level2Rejected(/*result1*/));
+  if (!error2) {
+  	console.log('parent level 2 error');  // 4
+    throw error2;
+  } 
+  
+  return result2;
 }
 ````
