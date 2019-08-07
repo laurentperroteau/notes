@@ -183,7 +183,7 @@ Correction version [await-to-js](https://www.npmjs.com/package/await-to-js) :
 __Avantages__
 
 1. Voir avantages du async/await
-2. Encore plus lisible, enfin au moins la fonction `level2Rejected()` (selon les goût)
+2. Encore plus lisible... enfin au moins la fonction `level2Rejected()` (selon les goût)
 
 ````js
 ...
