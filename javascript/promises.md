@@ -182,19 +182,15 @@ Correction version [await-to-js](https://www.npmjs.com/package/await-to-js) :
 
 __Avantages__
 
-1. Moins d'indentation
-2. Economie de lignes (12% ici)
-3. Pas de confusions avec les `onrejected`, `reject`, `return` and `throw`
+1. Voir avantages du async/await
+2. Encore plus lisible, enfin au moins la fonction `level2Rejected()` (selon les goût)
 
 ````js
 ...
 
 async function level2Rejected() {
   const [ error, result ] = await to(rejectedPromise());
-  if (error) {
-    console.log('level 2 error'); // 3 
-    throw error;
-  }
+  if (error) throw error;
   
   console.log('level 2 success');
   return result;
@@ -203,7 +199,8 @@ async function level2Rejected() {
 async function test() {
   const [ error1, result1 ] = await to(level1Revolved());
   if (error1) {
-    console.log('parent level 1 error');  // 5
+    // Quand "level2Rejected", pas trigger au contraires des exemples précédents (donc ça dépend des utilisations)
+    console.log('parent level 1 error');
     throw error1;
   }
   console.log('parent level 1 success'); // 2
