@@ -134,7 +134,9 @@ Correction version async/await :
 
 __Avantages__
 
-1. 
+1. Moins d'indentation
+2. Economie de 12 lignes
+3. Pas de confusions avec les `onrejected`, `reject`, `return` and `throw`
 
 ````js
 async function level1Revolved() {
