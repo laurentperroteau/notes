@@ -155,22 +155,20 @@ async function level2Rejected() {
   }
 }
 
-async function test() {
-	try {
-		await level1Revolved();
-  	console.log('parent level 1 success'); // 2
-    
-    try {
-    	await level2Rejected();
-      console.log('parent level 2 success');
-      return 'ok parent';
-    } catch(error) {
-      console.log('parent level 2 error');  // 5
-      throw error;
-    }
+try {
+  await level1Revolved();
+  console.log('parent level 1 success'); // 2
+
+  try {
+    await level2Rejected();
+    console.log('parent level 2 success');
+    return 'ok parent';
   } catch(error) {
-    console.log('parent level 1 error');  // 6
+    console.log('parent level 2 error');  // 5
     throw error;
   }
+} catch(error) {
+  console.log('parent level 1 error');  // 6
+  throw error;
 }
 ````
