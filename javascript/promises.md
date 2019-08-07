@@ -109,24 +109,26 @@ function level2Rejected() {
     });
 }
 
-return level1Revolved()
-  .then(() => {
-    console.log('parent level 1 success'); // 2
+function test() {
+  return level1Revolved()
+    .then(() => {
+      console.log('parent level 1 success'); // 2
 
-    return level2Rejected()
-      .then(() => { // don't trigger this "onfulfilled'
-        console.log('parent level 2 success');
-        return 'ok parent';
-      })
-      .catch(error => {
-        console.log('parent level 2 error');  // 5
-        throw error;
-      });
-  })
-  .catch(error => {
-    console.log('parent level 1 error');  // 6
-    throw error;
-  });
+      return level2Rejected()
+        .then(() => { // don't trigger this "onfulfilled'
+          console.log('parent level 2 success');
+          return 'ok parent';
+        })
+        .catch(error => {
+          console.log('parent level 2 error');  // 5
+          throw error;
+        });
+    })
+    .catch(error => {
+      console.log('parent level 1 error');  // 6
+      throw error;
+    });
+}
 ````
 
 Correction version async/await :
@@ -157,20 +159,22 @@ async function level2Rejected() {
   }
 }
 
-try {
-  await level1Revolved();
-  console.log('parent level 1 success'); // 2
-
+async function test() {
   try {
-    await level2Rejected();
-    console.log('parent level 2 success');
-    return 'ok parent';
+    await level1Revolved();
+    console.log('parent level 1 success'); // 2
+
+    try {
+      await level2Rejected();
+      console.log('parent level 2 success');
+      return 'ok parent';
+    } catch(error) {
+      console.log('parent level 2 error');  // 5
+      throw error;
+    }
   } catch(error) {
-    console.log('parent level 2 error');  // 5
+    console.log('parent level 1 error');  // 6
     throw error;
   }
-} catch(error) {
-  console.log('parent level 1 error');  // 6
-  throw error;
 }
 ````
