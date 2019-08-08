@@ -29,13 +29,13 @@ Bonus :
 Divers :
 --------
 * Numix : http://omgfoss.com/install-numix-theme-icons-ubuntu-18-04/
-* Bbakke: https://github.com/Bash-it/bash-it/wiki/Themes => 
 * composer : http://www.bravo-kernel.com/2014/08/how-to-install-composer-on-debian/
 * `sudo apt-get install guake`
 * node.js : https://nodejs.org/en/download/package-manager/ 
 * [changer background login ubuntu](http://ubuntuhandbook.org/index.php/2017/10/change-login-screen-background-ubuntu-17-10/)
 * logiciel photo : https://doc.ubuntu-fr.org/gthumb
 * alt+tab: https://askubuntu.com/questions/1036248/how-to-separate-opened-windows-in-alttab-switcher-in-ubuntu-18-04
+* Stacer (gui pour faire entre autre de la place): https://oguzhaninan.github.io/Stacer-Web/
 * Alias bash :
   * dans ~/.bashrc
 ````
