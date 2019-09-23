@@ -1,6 +1,26 @@
 Après installation d'un nouveau Linux :
 =======================================
 
+* Numix : http://omgfoss.com/install-numix-theme-icons-ubuntu-18-04/
+* `sudo apt-get install guake`
+* Tweak
+* node.js : https://nodejs.org/en/download/package-manager/ 
+* [changer background login ubuntu](http://ubuntuhandbook.org/index.php/2017/10/change-login-screen-background-ubuntu-17-10/)
+* logiciel photo : https://doc.ubuntu-fr.org/gthumb
+* alt+tab: https://askubuntu.com/questions/1036248/how-to-separate-opened-windows-in-alttab-switcher-in-ubuntu-18-04
+* Stacer (gui pour faire entre autre de la place): https://oguzhaninan.github.io/Stacer-Web/
+* Alias bash :
+  * dans ~/.bashrc
+````
+# Alias maison
+alias g="git"
+alias n="npm"
+````
+
+Problèmes :
+-----------
+* plex external drive: https://askubuntu.com/questions/395291/plex-media-server-wont-find-media-external-hard-drive
+
 PHP 7 Ubuntu :
 --------------
 
@@ -24,26 +44,3 @@ Suivre [ce tuto](https://www.howtoforge.com/tutorial/install-apache-with-php-and
 Bonus :
 
 * `sudo apt install composer`
-
-
-Divers :
---------
-* Numix : http://omgfoss.com/install-numix-theme-icons-ubuntu-18-04/
-* composer : http://www.bravo-kernel.com/2014/08/how-to-install-composer-on-debian/
-* `sudo apt-get install guake`
-* node.js : https://nodejs.org/en/download/package-manager/ 
-* [changer background login ubuntu](http://ubuntuhandbook.org/index.php/2017/10/change-login-screen-background-ubuntu-17-10/)
-* logiciel photo : https://doc.ubuntu-fr.org/gthumb
-* alt+tab: https://askubuntu.com/questions/1036248/how-to-separate-opened-windows-in-alttab-switcher-in-ubuntu-18-04
-* Stacer (gui pour faire entre autre de la place): https://oguzhaninan.github.io/Stacer-Web/
-* Alias bash :
-  * dans ~/.bashrc
-````
-# Alias maison
-alias g="git"
-alias n="npm"
-````
-
-Problèmes :
------------
-* plex external drive: https://askubuntu.com/questions/395291/plex-media-server-wont-find-media-external-hard-drive
