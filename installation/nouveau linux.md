@@ -9,6 +9,7 @@ Après installation d'un nouveau Linux :
 * logiciel photo : https://doc.ubuntu-fr.org/gthumb
 * alt+tab: https://askubuntu.com/questions/1036248/how-to-separate-opened-windows-in-alttab-switcher-in-ubuntu-18-04
 * Stacer (gui pour faire entre autre de la place): https://oguzhaninan.github.io/Stacer-Web/
+* sudo apt install flameshot
 * Alias bash :
   * dans ~/.bashrc
 ````
