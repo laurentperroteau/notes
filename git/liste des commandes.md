@@ -336,6 +336,19 @@ Pousse un tag (ne commit rien, seulement le tag)
 ````$ git push origin 0.0.1 ````
 
 
+Créer/appliquer un patch :
+--------------------------
+
+Crée le patch depuis un SHA de commit 
+
+````$ git format-patch -1 ca414f1 --stdout > test.patch````
+
+Ajouter le commit dans le patch sur la branche courrante 
+
+* ````$ git apply --stat test.patch```` (juste pour vérifier que c'est ok)
+* ````$ git am < test.patch````
+
+
 Submodule :
 --------------------------
 
