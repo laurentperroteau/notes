@@ -10,8 +10,8 @@ Lexique :
 * fast-forward (ou ff) : [explication](http://tech.m6web.fr/tentative-d-explication-des-fast-forward-sous-git)
 
 
-Catastrophe, j'ai tout perdu : 
-------------------------------
+Catastrophe !!! J'ai tout perdu :(
+----------------------------------
 
 A moins de ne pas avoir poussé sur un repo distant et d'avoir supprimer le dossier ````.git````, il est théoriquement impossible de perdre quelques choses avec Git : 
 
@@ -145,24 +145,6 @@ Revert tous les fichiers staged (attention, les changements non-commité seront 
 Reset/Supprimer le où les derniers commit en local
 
 ````$ git reset --hard HEAD~1```` 
-
----
-
-Reset/Supprimer un ou des commit en revenant sur le dernier "bon" commit en local
-
-````$ git reset 6f473b7````
-
----
-
-Appliquer le reset/suppression au répo distant
-
-````git push origin +HEAD````
-
----
-
-Revert d'un commit spécifique (supprime les changements effectusé lors d'un commit)
-
-````$ git revert 6f473b7````
 
 ---
 
@@ -348,9 +330,20 @@ Ajouter le commit dans le patch sur la branche courrante
 * ````$ git apply --stat test.patch```` (juste pour vérifier que c'est ok)
 * ````$ git am < test.patch````
 
+Revenir en arrière sur une branche distante :
+---------------------------------------------
+
+> ATTENTION, TRES DANGEREUX !!! IL FAUT ETRE SUR DE CE QUE TU FAIT
+
+Reset/Supprimer un ou des commit en revenant sur le dernier "bon" commit en local
+
+* ````$ git reset --hard HEAD~1```` => se positionner sur l'avant dernier commit
+* Dé-protéger la branche si besoin (très dangereux)
+* ````$ git push -f```` => pousser en forçant la réecriture de l'historique
+
 
 Submodule :
---------------------------
+-----------
 
 > Doc : https://git-scm.com/book/fr/v1/Utilitaires-Git-Sous-modules 
 
@@ -364,24 +357,6 @@ Submodule :
     1. ````$ git submodule update --init --recursive````
 3. Si besoin de supprimer un submodule (c'est pas simple) : http://stackoverflow.com/a/1260982/1104858
 
-Git Lab :
----------
-
-* Si pas de droit sur master, faire un merge-request :
-    * Sélectionner la branche voulu et la branche sur laquel on souhaite merger (master par exemple)
-    * Assigner le merge-request
-    * Quand la branche sera merger (pas forcément via Git Lab), elle sera automatiquement fermé
-
-* Faire référence à une issue (dans une autre issue ou pull request)
-    * Lorem ipsum #123
-
-* Commiter les fichiers "staged" en référencant une issue
-    
-````$ git commit -m “Test #123 => lorem ipsum”````
-
-* Commiter les fichiers "staged" tout en fermant une issue
-    
-````$ git commit -m “Fixed #123, fixed #124 => lorem ipsum” ````
 
 Documentations : 
 ----------------
