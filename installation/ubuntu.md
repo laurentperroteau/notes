@@ -10,3 +10,9 @@ __Suivre [ce tuto](https://soozx.fr/installer-ubuntu-dual-boot-windows-10/) trè
 * qu'il a fallu aussi [amorcer depuis le BIOS (F12) la clé live-USB](https://doc.ubuntu-fr.org/tutoriel/amorcer_sur_cd_ubuntu)
 
 Autre doc d'Ubuntu : [cohabitation Ubuntu/Windows](https://doc.ubuntu-fr.org/cohabitation_ubuntu_windows)
+
+## Pour le XPS
+
+Tuto complet (avec fix wifi et nvidia) : https://medium.com/@dgviranmalaka/how-to-enhance-touch-pad-gestures-like-mac-in-ubuntu-18-04-laptop-f5f25d5a0b4f
+
+Activiation multitouch : https://medium.com/@dgviranmalaka/how-to-enhance-touch-pad-gestures-like-mac-in-ubuntu-18-04-laptop-f5f25d5a0b4f
