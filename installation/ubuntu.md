@@ -19,3 +19,5 @@ Autre doc d'Ubuntu : [cohabitation Ubuntu/Windows](https://doc.ubuntu-fr.org/coh
 * Luminosité :
   * ~~https://askubuntu.com/questions/1179384/screen-brightness-not-changing-on-dell-xps-7590é~~ => fonctionne pas, j'ai un redémarage bizarre après, si réinstalle ne pas faire celui-ci
   * cette commande fonction `xrandr --output $(xrandr --listmonitors | awk '$1 == "0:" {print $4}') --brightness 0.6`
+  
+  __faire ce tuto__ : https://github.com/TillmannBerg/Ubuntu-Dell-XPS-15-2019
