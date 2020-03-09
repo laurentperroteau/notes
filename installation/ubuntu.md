@@ -16,4 +16,6 @@ Autre doc d'Ubuntu : [cohabitation Ubuntu/Windows](https://doc.ubuntu-fr.org/coh
 * Tuto complet (avec fix wifi et nvidia) : https://medium.com/@dgviranmalaka/how-to-enhance-touch-pad-gestures-like-mac-in-ubuntu-18-04-laptop-f5f25d5a0b4f
 * Activiation multitouch : https://medium.com/@dgviranmalaka/how-to-enhance-touch-pad-gestures-like-mac-in-ubuntu-18-04-laptop-f5f25d5a0b4f
 * Fix suspend : https://www.dell.com/community/Linux-General/XPS-15-9570-with-Ubuntu-18-04-1-not-resuming-after-suspend/td-p/6128710
-* ~~https://askubuntu.com/questions/1179384/screen-brightness-not-changing-on-dell-xps-7590é~~ => fonctionne pas, j'ai un redémarage bizarre après, si réinstalle ne pas faire celui-ci
+* Luminosité :
+  * ~~https://askubuntu.com/questions/1179384/screen-brightness-not-changing-on-dell-xps-7590é~~ => fonctionne pas, j'ai un redémarage bizarre après, si réinstalle ne pas faire celui-ci
+  * cette commande fonction `xrandr --output $(xrandr --listmonitors | awk '$1 == "0:" {print $4}') --brightness 0.6`
