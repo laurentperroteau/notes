@@ -13,7 +13,7 @@ Autre doc d'Ubuntu : [cohabitation Ubuntu/Windows](https://doc.ubuntu-fr.org/coh
 
 ## Pour le XPS
 
-* Tuto complet (avec fix wifi et nvidia) : hhttps://medium.com/@tylergwlum/my-journey-installing-ubuntu-18-04-on-the-dell-xps-15-7590-2019-756f738a6447 => prochaine fois (si besoin), ne pas installer dans le home (au même niveau que Documents)
+* Tuto complet (avec fix wifi et nvidia) : https://medium.com/@tylergwlum/my-journey-installing-ubuntu-18-04-on-the-dell-xps-15-7590-2019-756f738a6447 => prochaine fois (si besoin), ne pas installer wifi dans le home (au même niveau que Documents)
 * Activiation multitouch : https://medium.com/@dgviranmalaka/how-to-enhance-touch-pad-gestures-like-mac-in-ubuntu-18-04-laptop-f5f25d5a0b4f
 * Fix suspend : https://www.dell.com/community/Linux-General/XPS-15-9570-with-Ubuntu-18-04-1-not-resuming-after-suspend/td-p/6128710
 * Luminosité :
