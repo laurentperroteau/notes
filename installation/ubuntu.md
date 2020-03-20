@@ -17,6 +17,7 @@ Autre doc d'Ubuntu : [cohabitation Ubuntu/Windows](https://doc.ubuntu-fr.org/coh
 2. Après update du bios, réinstallation de ubuntu
 3. Presque plus de problème, ni Wifi, ni luminosité de l'écran
 4. Suivi ce tuto (sauf luminosité, pas besoin)
+5. TODO: j'ai appliqué le suspend du dessous, à voir si ça corrige le problème de batterie qui se vide)
 5. TODO : Activiation multitouch : https://medium.com/@dgviranmalaka/how-to-enhance-touch-pad-gestures-like-mac-in-ubuntu-18-04-laptop-f5f25d5a0b4f
 6. TODO: consomation batterie
 
