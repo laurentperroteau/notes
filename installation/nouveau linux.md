@@ -10,6 +10,7 @@ Après installation d'un nouveau Linux :
 * alt+tab: https://askubuntu.com/questions/1036248/how-to-separate-opened-windows-in-alttab-switcher-in-ubuntu-18-04
 * Stacer (gui pour faire entre autre de la place): https://oguzhaninan.github.io/Stacer-Web/
 * sudo apt install flameshot
+* TO TEST : https://askubuntu.com/questions/128474/how-to-customize-on-screen-notifications
 * Alias bash :
   * dans ~/.bashrc
 ````
