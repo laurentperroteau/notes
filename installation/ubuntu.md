@@ -16,7 +16,7 @@ Autre doc d'Ubuntu : [cohabitation Ubuntu/Windows](https://doc.ubuntu-fr.org/coh
 1. Installer un première fois ubuntu, plusieurs problèmes
 2. Après update du bios, réinstallation de ubuntu
 3. Presque plus de problème, ni Wifi, ni luminosité de l'écran
-4. Suivi ce tuto (sauf luminosité, pas besoin)
+4. Suivi ce tuto pour l'installation (pas pour le Wifi etc...) https://medium.com/@tylergwlum/my-journey-installing-ubuntu-18-04-on-the-dell-xps-15-7590-2019-756f738a6447
 5. TODO: j'ai appliqué le suspend du dessous, à voir si ça corrige le problème de batterie qui se vide)
 5. TODO : Activiation multitouch : https://medium.com/@dgviranmalaka/how-to-enhance-touch-pad-gestures-like-mac-in-ubuntu-18-04-laptop-f5f25d5a0b4f
 6. TODO: consomation batterie
