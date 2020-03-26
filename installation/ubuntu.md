@@ -24,8 +24,7 @@ Autre doc d'Ubuntu : [cohabitation Ubuntu/Windows](https://doc.ubuntu-fr.org/coh
 
 TODO: j'ai essayé de switter pour intel (au lieu et nvidia): `sudo prime-select intel`, apparement c'est beaucoup moins consamateur (a voir si ça résout la luminosité) 
 
-TODO : luminosité, appliqué fix du grud, si ça fonctionnait avant, c'est peut-être simplement la commande dans le menu qui ne fonctionnne plus (quoique depuis setting non plus mais c'est peut-être la même chose)
-
+TODO : luminosité => tenté de nouveau le post de TillmannBerg
 Ce que j'avais pour la première installe :
 
 * Tuto complet (avec fix wifi et nvidia) : https://medium.com/@tylergwlum/my-journey-installing-ubuntu-18-04-on-the-dell-xps-15-7590-2019-756f738a6447 => prochaine fois (si besoin), ne pas installer wifi dans le home (au même niveau que Documents)
