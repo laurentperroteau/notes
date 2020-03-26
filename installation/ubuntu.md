@@ -22,7 +22,9 @@ Autre doc d'Ubuntu : [cohabitation Ubuntu/Windows](https://doc.ubuntu-fr.org/coh
 5. Activiation multitouch : https://medium.com/@dgviranmalaka/how-to-enhance-touch-pad-gestures-like-mac-in-ubuntu-18-04-laptop-f5f25d5a0b4f
 6. TODO: consomation batterie
 
-TODO: j'ai essayé de switter pour intel (au lieu et nvidia): `sudo prime-select intel`, apparement c'est beaucoup moins consamateur (a voir si ça résout la luminosité)
+TODO: j'ai essayé de switter pour intel (au lieu et nvidia): `sudo prime-select intel`, apparement c'est beaucoup moins consamateur (a voir si ça résout la luminosité) 
+
+TODO : luminosité, appliqué fix du grud, si ça fonctionnait avant, c'est peut-être simplement la commande dans le menu qui ne fonctionnne plus (quoique depuis setting non plus mais c'est peut-être la même chose)
 
 Ce que j'avais pour la première installe :
 
