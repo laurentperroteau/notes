@@ -17,7 +17,7 @@ A moins de ne pas avoir poussé sur un repo distant et d'avoir supprimer le doss
 
 1. ````$ git reflog```` pour voir les dernières actions exécutées (numérotées)
 2. ````$ git reset 'HEAD@{1}'```` pour revenir au HEAD a l'état précédent la catastrophe
-3. Le HEAD est maintenant à l'endroit voulu mais les fichiers en local sont toujours ceux précédent la catastrophe, donc il faut les annuler en faisant ```$ git checkout nomBrancheCourante``` 
+3. ````$ reset --hard HEAD````
 
 
 Repo local :
@@ -284,6 +284,10 @@ Annuler un rebase (on perd ce qui est staged)
 ````$ git rebase --abort````
 
 Après avoir rebase master sur une branche de type feature (à condition que les deux soient à jour) :
+
+````$ git push origin feature-branch````
+
+Si les commits de la dernière branche mergé sur develop ont été squash, on peut théoriquement faire un ````--onto```` mais j'y arrive pas puisque c'est GitLab qui squash mais si cette dernière branche sera squash aussi, pas de commit en trop de changement en trop
 
 ````$ git push origin feature-branch````
 
