@@ -9,7 +9,7 @@ Après installation d'un nouveau Linux :
 * logiciel photo : https://doc.ubuntu-fr.org/gthumb
 * alt+tab: https://askubuntu.com/questions/1036248/how-to-separate-opened-windows-in-alttab-switcher-in-ubuntu-18-04
 * Stacer (gui pour faire entre autre de la place): https://oguzhaninan.github.io/Stacer-Web/
-* sudo apt install flameshot
+* sudo apt install flameshot et changer raccourci impression écran : https://askubuntu.com/questions/1036473/ubuntu-18-how-to-change-screenshot-application-to-flameshot
 * TO TEST : https://askubuntu.com/questions/128474/how-to-customize-on-screen-notifications
 * Alias bash :
   * dans ~/.bashrc
