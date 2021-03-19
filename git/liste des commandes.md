@@ -17,7 +17,7 @@ A moins de ne pas avoir poussé sur un repo distant et d'avoir supprimer le doss
 
 1. ````$ git reflog```` pour voir les dernières actions exécutées (numérotées)
 2. ````$ git reset 'HEAD@{1}'```` pour revenir au HEAD a l'état précédent la catastrophe
-3. ````$ reset --hard HEAD````
+3. ````$ git reset --hard HEAD````
 
 
 Repo local :
